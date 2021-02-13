@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Peddana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0b7189;
+}
+
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.home-paragraph-3 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #eaefbd;
+}
+
+nav a {
+  color: #2d728f;
+  font-size: 1.1em;
+  line-height: 10px;
+}
+
+main {
+  background-color: white;
+  padding: 35px;
+  font-size: 35px;
+  /*margin:70px;*/
+}
+
+main img {
+  width: 100%;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+}
+
+main h2 {
+  margin-bottom: -48px;
+  font-family: "Peddana", Arial, sans-serif;
+  font-size: 70px;
+  line-height: 1.2em;
+}
+.banner-box img {
+  width: 100%;
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1em;
+}
+.home-headline-1 {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+
+img {
+  max-width: 100%;
+}
+header {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 110px auto;
+}
+nav ul {
+  list-style: none; /* removes the bullets! */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+}
+nav ul li {
+  line-height: 25px;
+}
+
+nav a {
+  color: #bfd7ea;
+  text-decoration: none;
+}

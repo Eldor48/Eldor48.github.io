@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quarts to liters</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #final_result {
+        font-size: 26px !important;
+        font-family: "Raleway", sans-serif !important;
+        margin-top: 30px !important;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function quartsToLiters() {
+        // Get information from the user
+        let QuartsValue = document.getElementById("QuartsInTheBox").value;
+        // Convert quaters from the box into numbers
+        let QuartsInNumber = parseFloat(QuartsValue);
+        // Quarts to Liters
+        let liters = QuartsInNumber * 0.946353;
+        //Round decimals
+        let litersRounded = liters.toFixed(3);
+        //Show Liters volume to the user
+        document.getElementById("final_result").innerHTML =
+          "These area your quarts in liters " + litersRounded + " ltrs";
+      }
+    </script>
+    <div id="convertionBox">
+      <p>
+        Enter your volumer in quarts: <input type="text" id="QuartsInTheBox" />
+      </p>
+      <br />
+      <button type="button" onclick="quartsToLiters()">Convert</button>
+      <br />
+      <div id="final_result"></div>
+    </div>
+  </body>
+</html>
+<!--
+    In a file named quartsToLiters.html, write a defining table 
+    and a JavaScript program that asks a user for a volume in 
+    quarts and then converts that value into liters. 
+    Your program should correctly handle real numbers such as 7.54.
+ -->

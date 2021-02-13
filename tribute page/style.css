@@ -1,0 +1,44 @@
+body {
+  background-color: #e8e8e8;
+  font-family: "Raleway", sans-serif;
+}
+#main {
+  text-align: center;
+  margin: 10px;
+  height: auto;
+  background-color: #f4f5fb;
+  padding: 5px;
+}
+#main p{
+    font-size: 30px;
+}
+ul li {
+  margin: 10px 0;
+  font-weight: 550;
+  list-style-position: inside;
+}
+ul {
+  background-color: #fff8f0;
+  margin: auto;
+  padding: 10px;
+  width: 70%;
+}
+footer {
+  margin: 30px;
+  background-color:gainsboro;
+  padding: 15px;
+}
+#img-div {
+  background-color: honeydew;
+  padding: 40px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    max-width: 725px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  height: auto;
+}
