@@ -11,37 +11,77 @@
 
 <body>
   <h1 id="title">Survey Form</h1>
-  <p id="description"></p>
+  <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+    Voluptatem laborum non, assumenda ducimus in sequi. <br>
+    Provident tenetur nemo, ratione quaerat sequi velit? Nesciunt.</p>
   <form action="" id="survey-form">
-    <br><br>
-    <label for="text" id="text-label">Enter your name:</label>
-    <input type="text" id="text" name="email" placeholder="John Thopmson">
-    <br><br>
-    <label for="email" id="email-label">Enter your email:</label>
-    <input type="email" id="email" name="email" placeholder="example@domain.com">
-    <br><br>
-    <label for="number" id="number-label">Age: <span>(optional)</span></label>
-    <input type="number" id="numer" name="quantity" min="13" max="92" placeholder="23">
+    <div class="form-element"><br><br>
+      <label for="text" id="name-label">Enter your name:</label>
+      <input type="text" id="name" name="email" placeholder="John Thopmson" required>
+    </div>
+
 
     <br><br>
-    <label for="browser">Which path would you like to choose?</label>
-    <br>
-    <input list="browsers" name="browser" id="dropdown">
-    <datalist id="browsers">
-      <option value="Internet Explorer">
-      <option value="Firefox">
-      <option value="Chrome">
-      <option value="Opera">
-      <option value="Safari">
-    </datalist>
-    <br><br>
-    <p>Please select your skill level:</p>
-    <input type="radio" id="beginner" name="level" value="beginner">
-    <label for="beginner">Beginner</label><br>
-    <input type="radio" id="medium" name="level" value="medium">
-    <label for="medium">Medium</label><br>
-    <input type="radio" id="advanced" name="level" value="advanced">
-    <label for="advanced">Advanced</label>
+    <div class="form-element">
+      <label for="email" id="email-label">Enter your email:</label>
+      <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+    </div>
+    <div class="form-element">
+      <br><br>
+      <label for="number" id="number-label">Age: <span>(optional)</span></label>
+      <input type="number" id="number" name="number" min="13" max="92" placeholder="23" required>
+    </div>
+
+    <div class="form-element">
+      <br><br>
+      <label for="browser">Which is your favorite browser?</label>
+    </div>
+
+    <div class="form-element">
+      <br>
+      <input type="radio" id="Google-Chrome" name="browser" value="Google Chrome">
+      <label for="Google-Chrome">Google Chrome</label><br>
+      <input type="radio" id="Mozilla-Firefox" name="browser" value="Mozilla Firefox">
+      <label for="Mozilla-Firefox">Mozilla Firefox</label><br>
+      <input type="radio" id="Opera-GX" name="browser" value="Opera-GX">
+      <label for="Opera-GX">Opera GX</label><br>
+      <br><br>
+    </div>
+
+    <div class="form-element">
+      <p>Please select your skill level:</p>
+      <select id="dropdown" name="dropdown">
+        <option value="beginner">Beginner</option>
+        <option value="medium">Medium</option>
+        <option value="advanced">Advanced</option>
+      </select>
+    </div>
+
+    <div class="form-element">
+      <p>What do you want to learn?</p>
+      <input type="checkbox" id="HTML" name="HTML" value="HTML">
+      <label for="HTML">HTML</label><br>
+      <input type="checkbox" id="CSS" name="CSS" value="CSS">
+      <label for="CSS">CSS</label><br>
+      <input type="checkbox" id="Javascript" name="Javascript" value="Javascript">
+      <label for="Javascript">Javascript</label><br>
+      <input type="checkbox" id="PHP" name="PHP" value="PHP">
+      <label for="PHP">PHP</label><br>
+      <input type="checkbox" id="mongoDB" name="mongoDB" value="mongoDB">
+      <label for="mongoDB">mongoDB</label><br>
+      <input type="checkbox" id="reactJS" name="reactJS" value="reactJS">
+      <label for="reactJS">reactJS</label><br>
+      <input type="checkbox" id="WordPress" name="WordPress" value="WordPress">
+      <label for="WordPress">WordPress</label><br>
+      <br>
+    </div>
+
+    <div class="form-element">
+      <label for="message">Your message:</label><br />
+      <textarea placeholder="Tell us what you think" id="message" name="message" rows="6" cols="80" style="resize: none; max-width: 95% ;"></textarea>
+      <br>
+      <button type="submit" id="submit" form="survey-form" value="Submit">Submit</button>
+    </div>
   </form>
 
 </body>
