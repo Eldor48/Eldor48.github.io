@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Images</title>
-  </head>
-  <body>
-    <a href="https://www.instagram.com/"
-      ><img
-        src="https://cdn.glitch.com/baefdbd8-1b65-47ca-b33f-4a881c0b2371%2Finstagram.png?v=1602364764438"
-        alt="Instagram Logo"
-    /></a>
-    <a href="http://www.twitter.com/"
-      ><img
-        src="https://cdn.glitch.com/baefdbd8-1b65-47ca-b33f-4a881c0b2371%2Ftwitter.png?v=1602364765646"
-        alt="Twitter logo"
-    /></a>
-    <a href="http://www.facebook.com">
-      <img
-        src="https://cdn.glitch.com/baefdbd8-1b65-47ca-b33f-4a881c0b2371%2Ffacebook.png?v=1602364793267"
-        alt="Facebook logo"
-    /></a> 
-     
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey form</title>
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description"></p>
+  <form action="" id="survey-form">
+    <br><br>
+    <label for="text" id="text-label">Enter your name:</label>
+    <input type="text" id="text" name="email" placeholder="John Thopmson">
+    <br><br>
+    <label for="email" id="email-label">Enter your email:</label>
+    <input type="email" id="email" name="email" placeholder="example@domain.com">
+    <br><br>
+    <label for="number" id="number-label">Age: <span>(optional)</span></label>
+    <input type="number" id="numer" name="quantity" min="13" max="92" placeholder="23">
+
+    <br><br>
+    <label for="browser">Which path would you like to choose?</label>
+    <br>
+    <input list="browsers" name="browser" id="dropdown">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <br><br>
+    <p>Please select your skill level:</p>
+    <input type="radio" id="beginner" name="level" value="beginner">
+    <label for="beginner">Beginner</label><br>
+    <input type="radio" id="medium" name="level" value="medium">
+    <label for="medium">Medium</label><br>
+    <input type="radio" id="advanced" name="level" value="advanced">
+    <label for="advanced">Advanced</label>
+  </form>
+
+</body>
+
 </html>
