@@ -1,10 +1,15 @@
 * {
   box-sizing: border-box;
 }
-#survey-form{
+
+#survey-form {
   margin: auto;
 }
 
-#survey-form .form-element{
+#survey-form .form-element {
   margin: auto;
+}
+
+body{
+
 }

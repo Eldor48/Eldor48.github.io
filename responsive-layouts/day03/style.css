@@ -17,8 +17,9 @@ h1 {
 
 p {
 font-family: 'Roboto', sans-serif;
-font-size: 16px ;
-font-weight: 200;
+font-size: 21px ;
+font-weight: 400;
+line-height: 1.5rem;
 }
 
 button{
@@ -29,13 +30,13 @@ button{
   padding: 23px;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
-  border-radius: 30px;
+  border-radius: 100px;
   font-size: 18px
 }
 
 .container{
-  width: 70%;
+  width: 50%;
   margin-left: 10vw;
-  margin-top: 5vw;
+  margin-top: 10vw;
   max-width: 1400px;
 }
