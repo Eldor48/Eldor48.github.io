@@ -9,7 +9,27 @@
 #survey-form .form-element {
   margin: auto;
 }
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 
-body{
+  background-image:
+    url('img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
 
+.container {
+  margin: auto;
+  width: 70%;
+ background-color: white;
+  text-align: center;
+  
 }
