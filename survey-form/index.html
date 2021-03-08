@@ -6,85 +6,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <title>Survey form</title>
 </head>
 
 <body>
   <div class="container">
-  <h1 id="title">Survey Form</h1>
-  <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
-    Voluptatem laborum non, assumenda ducimus in sequi. <br>
-    Provident tenetur nemo, ratione quaerat sequi velit? Nesciunt.</p>
-  <form action="" id="survey-form">
-    <div class="form-element"><br><br>
-      <label for="text" id="name-label">Enter your name:</label>
-      <input type="text" id="name" name="email" placeholder="John Thopmson" required>
-    </div>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Voluptatem laborum non, assumenda ducimus in sequi.
+      Provident tenetur nemo, ratione quaerat sequi velit? Nesciunt.</p>
+    <form action="thanks.html" id="survey-form">
+      <div class="form-element">
+        <label for="name" id="name-label">Enter your name:</label>
+        <input type="text" id="name" name="email" placeholder="John Thopmson" required>
+      </div>
 
 
-    <br><br>
-    <div class="form-element">
-      <label for="email" id="email-label">Enter your email:</label>
-      <input type="email" id="email" name="email" placeholder="example@domain.com" required>
-    </div>
-    <div class="form-element">
-      <br><br>
-      <label for="number" id="number-label">Age: <span>(optional)</span></label>
-      <input type="number" id="number" name="number" min="13" max="92" placeholder="23" required>
-    </div>
 
-    <div class="form-element">
-      <br><br>
-      <label for="browser">Which is your favorite browser?</label>
-    </div>
+      <div class="form-element">
+        <label for="email" id="email-label">Enter your email:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+      </div>
+      <div class="form-element">
 
-    <div class="form-element">
-      <br>
-      <input type="radio" id="Google-Chrome" name="browser" value="Google Chrome">
-      <label for="Google-Chrome">Google Chrome</label><br>
-      <input type="radio" id="Mozilla-Firefox" name="browser" value="Mozilla Firefox">
-      <label for="Mozilla-Firefox">Mozilla Firefox</label><br>
-      <input type="radio" id="Opera-GX" name="browser" value="Opera-GX">
-      <label for="Opera-GX">Opera GX</label><br>
-      <br><br>
-    </div>
+        <label for="number" id="number-label">Age: <span>(optional)</span></label>
+        <input type="number" id="number" name="number" min="13" max="92" placeholder="23" required>
+      </div>
 
-    <div class="form-element">
-      <p>Please select your skill level:</p>
-      <select id="dropdown" name="dropdown">
-        <option value="beginner">Beginner</option>
-        <option value="medium">Medium</option>
-        <option value="advanced">Advanced</option>
-      </select>
-    </div>
+      <div class="form-element">
 
-    <div class="form-element">
-      <p>What do you want to learn?</p>
-      <input type="checkbox" id="HTML" name="HTML" value="HTML">
-      <label for="HTML">HTML</label><br>
-      <input type="checkbox" id="CSS" name="CSS" value="CSS">
-      <label for="CSS">CSS</label><br>
-      <input type="checkbox" id="Javascript" name="Javascript" value="Javascript">
-      <label for="Javascript">Javascript</label><br>
-      <input type="checkbox" id="PHP" name="PHP" value="PHP">
-      <label for="PHP">PHP</label><br>
-      <input type="checkbox" id="mongoDB" name="mongoDB" value="mongoDB">
-      <label for="mongoDB">mongoDB</label><br>
-      <input type="checkbox" id="reactJS" name="reactJS" value="reactJS">
-      <label for="reactJS">reactJS</label><br>
-      <input type="checkbox" id="WordPress" name="WordPress" value="WordPress">
-      <label for="WordPress">WordPress</label><br>
-      <br>
-    </div>
+        <label for="browser">Which is your favorite browser?</label>
+      </div>
 
-    <div class="form-element">
-      <label for="message">Your message:</label><br />
-      <textarea placeholder="Tell us what you think" id="message" name="message" rows="6" cols="80" style="resize: none; max-width: 95% ;"></textarea>
-      <br>
-      <button type="submit" id="submit" form="survey-form" value="Submit">Submit</button>
-    </div>
-  </form>
-</div>
+      <div class="form-element" id="radio-buttons">
+        <label class="radio" for="Google-Chrome"><input type="radio" id="Google-Chrome" name="browser" value="Google Chrome"> Google Chrome</label>
+
+        <label class="radio" for="Mozilla-Firefox"><input type="radio" id="Mozilla-Firefox" name="browser" value="Mozilla Firefox">Mozilla Firefox</label>
+
+        <label class="radio" for="Opera-GX"><input type="radio" id="Opera-GX" name="browser" value="Opera-GX"> Opera GX</label>
+
+      </div>
+
+      <div class="form-element" id="dropdown" >
+        <p>Please select your skill level:</p>
+        <select  name="dropdown">
+          <option value="beginner">Beginner</option>
+          <option value="medium">Medium</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+
+      <div class="form-element">
+        <p>What do you want to learn?</p>
+
+        <label for="HTML">HTML</label>
+        <input type="checkbox" id="HTML" name="HTML" value="HTML">
+        <label for="CSS">CSS</label>
+        <input type="checkbox" id="CSS" name="CSS" value="CSS">
+
+        <label for="Javascript">Javascript</label>
+        <input type="checkbox" id="Javascript" name="Javascript" value="Javascript">
+
+        <label for="PHP">PHP</label>
+        <input type="checkbox" id="PHP" name="PHP" value="PHP">
+
+        <label for="mongoDB">mongoDB</label>
+        <input type="checkbox" id="mongoDB" name="mongoDB" value="mongoDB">
+
+        <label for="reactJS">reactJS</label>
+        <input type="checkbox" id="reactJS" name="reactJS" value="reactJS">
+
+        <label for="WordPress">WordPress</label>
+        <input type="checkbox" id="WordPress" name="WordPress" value="WordPress">
+
+
+      </div>
+
+      <div class="form-element">
+        <label for="message">Your message:</label>
+        <textarea placeholder="Tell us what you think" id="message" name="message" rows="6" cols="80" style="resize: none; max-width: 95% ;"></textarea>
+
+        <button type="submit" id="submit" class="submit-button" form="survey-form" value="Submit">Submit</button>
+      </div>
+    </form>
+  </div>
 </body>
 
 </html>
