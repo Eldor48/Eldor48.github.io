@@ -87,14 +87,14 @@ input, button, select, textarea{
 
 .submit-button {
   display: block;
-  width: 80%;
-  padding: 0.75rem;
-  background: green;
+  width: 60%;
+  padding: 1.25rem;
+  background: rgba(17, 201, 0, 0.7);
   color: inherit;
-  border-radius: 2px;
+  border-radius: 10px;
   cursor: pointer;
   font-family: 'Shippori Mincho', serif;
-
+   font-size: 1.5rem;
   margin: 12px auto;
 }
 /* Customize the label (the container) */
