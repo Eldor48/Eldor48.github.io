@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* font-family: 'PT Serif', serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainFont: 'PT Serif', serif;
+  --light-sea-green: #00a6a6ff;
+  --minion-yellow: #fde74cff;
+  --sepia: #6d3d14ff;
+  --caput-mortuum: #551b14ff;
+  --heat-wave: #f17300ff;
+
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 8vh;
+  font-family: var(--mainFont);
+  background-color: var(--minion-yellow) ;
+  background-color: var(--heat-wave);
+
+}
+
+header#header div#company-logo {
+  width: 20%;
+}
+
+nav {
+  margin-left: 22px;
+}

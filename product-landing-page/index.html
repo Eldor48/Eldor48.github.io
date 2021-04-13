@@ -2,35 +2,43 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <title>hamburger Boost</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="icon" type="image/svg+xml" href="img/burger.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Hamburguer Boost</title>
 </head>
 
 <body>
-  <header id="header">
-    <img id="header-img" src="" alt="">
-    <nav id="nav-bar">
-      <ul>
-        <li> <a class="nav-link" href="">  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda maiores rem atque possimus tempora expedita ratione, ipsum molestias ex quis in fuga animi, error explicabo nulla repellat praesentium laborum?</p> </a> </li>
-        <li> <a class="nav-link" href="">  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda maiores rem atque possimus tempora expedita ratione, ipsum molestias ex quis in fuga animi, error explicabo nulla repellat praesentium laborum?</p> </a> </li>
-        <li> <a class="nav-link" href="">  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda maiores rem atque possimus tempora expedita ratione, ipsum molestias ex quis in fuga animi, error explicabo nulla repellat praesentium laborum?</p> </a> </li>
-      </ul>
-    </nav>
-  </header>
+    <header id="header">
+        <div id="company-logo">
+            <img src="img/hamburger.svg" alt="hamburguer logo" id="header-img">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link"><a href="http://">Home</a></li>
+                <li class="nav-link"><a href="http://">Info</a></li>
+                <li class="nav-link"><a href="http://">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main><iframe width="645" height="363" src="https://www.youtube.com/embed/JqjWaQyKriI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <label for="email">Email address:
+            <input type="email" name="email" id="email" placeholder="Example: carlos_smith@boosted.com">
 
-  <iframe id="video" width="700" height="394" src="https://www.youtube.com/embed/HS24PywYlxg" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
-  <form id="form" action="">
-    <label for="email"> Enter your email:
-      <input type="email" name="email" id="email" placeholder="johnsmith@placeholder.com" required>
-    </label>
+        </label>
+    </form>
+    </main>
+    
 
-    <input id="submit" type="submit" value="Submit">
-  </form>
+        
 </body>
 
 </html>
