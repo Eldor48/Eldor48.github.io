@@ -40,3 +40,7 @@ button{
   margin-top: 10vw;
   max-width: 1400px;
 }
+
+button:hover, button:focus{
+  opacity: .75;
+}
