@@ -111,7 +111,7 @@ nav#nav-bar {
   display:flex;flex-direction:column;
   align-items:center;
   transform: translateX(100%); 
-  transition: transform 0.5 ease-in;
+  transition: transform 0.5s ease-in;
   }
 
   nav#nav-bar .nav-links li{
@@ -143,4 +143,11 @@ header#header div#company-logo {
   margin-top: .6px;
 }
 
+
+
 }
+
+.nav-active{
+  transform: translateX(100%);
+}
+
