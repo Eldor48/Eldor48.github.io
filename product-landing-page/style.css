@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* font-family: 'PT Serif', serif; */
 * {
@@ -8,6 +9,7 @@
 }
 
 :root {
+  --titleFont: 'Playfair Display', serif;
   --mainFont: 'PT Serif', serif;
   --charcoal: #264653ff;
   --persian-green: #2a9d8fff;
@@ -15,7 +17,7 @@
   --sandy-brown: #f4a261ff;
   --burnt-sienna: #e76f51ff;
   --columbia-blue: #c8ecfaff;
-
+  --titleSize: 3.7rem; 
 }
 
 
@@ -28,6 +30,10 @@ header {
   background-color: var(--orange-yellow-crayola);
   /* background-color: var(--heat-wave); */
   padding: 12px;
+  position: -webkit-sticky;
+  /* position: sticky; */
+  /* top: 0; */
+
 
 }
 
@@ -119,6 +125,7 @@ nav#nav-bar {
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
+    overflow-x: hidden;
     transition: transform 0.5s ease-in;
   }
 
@@ -131,6 +138,7 @@ nav#nav-bar {
 
   body {
     overflow-x: hidden;
+    background-color: #fafafa7d; 
   }
 
   header#header div#company-logo {
@@ -173,4 +181,78 @@ nav#nav-bar {
       opacity: 1;
       transform: translateX(0);
   }
+} 
+
+
+div.youtube-embed {
+ margin-bottom: 1%;
+ margin-top: 1%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+} 
+
+div.youtube-embed iframe {
+ 
+  width:60vw;
+  height:60vh;
+  overflow-x: hidden;
+} 
+ main h1{
+   font-size: var(--titleSize); 
+   text-align: center; 
+   font-family: var(--titleFont);
+
+ }
+ 
+ section.product-description{
+  width:80%; 
+  margin: 0 auto;
+}
+
+section.product-description div.burger-item{
+  display:flex;
+  flex-direction: row;
+  border: 2px solid #000;
+  padding:15px;
+  flex-wrap: wrap;
+}
+
+section.product-description div.burger-item img{
+ width:20%; 
+
+}
+
+section.product-description div.burger-item p{
+ margin: auto;
+ /* padding-left: 22px; */
+ width:60%;
+ display:block; 
+ font-family: var(--mainFont);
+word-spacing: 4px;
+font-size: 23px;
+border-left: 3px solid #000;
+padding-left: 41px;
+}  
+
+@media  screen and (max-width: 860px) {
+  section.product-description div.burger-item{
+    display: grid; 
+    grid-template-rows: auto 1fr; 
+    grid-template-columns: 1fr; 
+    justify-items: center;
+  }
+
+  
+section.product-description div.burger-item p{
+  border-left: none;
+  padding-left: 0;
+ }  
+
+ section.product-description div.burger-item img{
+  width:50%; 
+ 
+ }
+ 
 }
