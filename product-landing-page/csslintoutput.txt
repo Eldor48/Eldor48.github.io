@@ -1,0 +1,201 @@
+
+style.css
+   1:1   ✖  Unknown rule no-invalid-position-at-import-rule                                                                                    no-invalid-position-at-import-rule               
+   1:1   ✖  Unknown rule no-irregular-whitespace                                                                                               no-irregular-whitespace                          
+  20:23  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+  20:24  ✖  Expected newline before "}" of a multi-line block                                                                                  block-closing-brace-newline-before               
+  23:1   ✖  Expected no more than 1 empty line                                                                                                 max-empty-lines                                  
+  31:3   ✖  Expected empty line before comment                                                                                                 comment-empty-line-before                        
+  34:3   ✖  Expected empty line before comment                                                                                                 comment-empty-line-before                        
+  35:3   ✖  Expected empty line before comment                                                                                                 comment-empty-line-before                        
+  36:3   ✖  Expected empty line before comment                                                                                                 comment-empty-line-before                        
+  39:1   ✖  Expected no more than 1 empty line                                                                                                 max-empty-lines                                  
+  40:1   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+  44:3   ✖  Expected empty line before comment                                                                                                 comment-empty-line-before                        
+  59:3   ✖  Expected empty line before comment                                                                                                 comment-empty-line-before                        
+  74:3   ✖  Unexpected duplicate "color"                                                                                                       declaration-block-no-duplicate-properties        
+  76:3   ✖  Expected empty line before comment                                                                                                 comment-empty-line-before                        
+  82:1   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 104:3   ✖  Unexpected empty line before rule                                                                                                  rule-empty-line-before                           
+ 106:5   ✖  Expected empty line before comment                                                                                                 comment-empty-line-before                        
+ 114:1   ✖  Expected no more than 1 empty line                                                                                                 max-empty-lines                                  
+ 115:1   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 121:13  ✖  Unexpected unit                                                                                                                    length-zero-no-unit                              
+ 134:29  ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 139:1   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 143:33  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 144:2   ✖  Expected newline before "}" of a multi-line block                                                                                  block-closing-brace-newline-before               
+ 148:5   ✖  Expected empty line before comment                                                                                                 comment-empty-line-before                        
+ 157:3   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 162:4   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 163:3   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 167:17  ✖  Expected a leading zero                                                                                                            number-leading-zero                              
+ 174:1   ✖  Expected no more than 1 empty line                                                                                                 max-empty-lines                                  
+ 175:1   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 179:7   ✖  Expected indentation of 4 spaces                                                                                                   indentation                                      
+ 180:7   ✖  Expected indentation of 4 spaces                                                                                                   indentation                                      
+ 182:3   ✖  Expected empty line before rule                                                                                                    rule-empty-line-before                           
+ 183:7   ✖  Expected indentation of 4 spaces                                                                                                   indentation                                      
+ 184:7   ✖  Expected indentation of 4 spaces                                                                                                   indentation                                      
+ 186:2   ✖  Expected newline after "}"                                                                                                         block-closing-brace-newline-after                
+ 186:2   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 188:1   ✖  Expected no more than 1 empty line                                                                                                 max-empty-lines                                  
+ 190:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 191:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 192:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 193:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 194:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 195:1   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 196:1   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 196:2   ✖  Expected newline after "}"                                                                                                         block-closing-brace-newline-after                
+ 196:2   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 199:1   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 200:3   ✖  Unexpected empty line before declaration                                                                                           declaration-empty-line-before                    
+ 200:9   ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 201:10  ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 203:2   ✖  Expected newline after "}"                                                                                                         block-closing-brace-newline-after                
+ 203:2   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 204:2   ✖  Expected empty line before rule                                                                                                    rule-empty-line-before                           
+ 204:2   ✖  Expected indentation of 0 spaces                                                                                                   indentation                                      
+ 204:8   ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 205:4   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 205:32  ✖  Expected newline after ";" in a multi-line declaration block                                                                       declaration-block-semicolon-newline-after        
+ 205:32  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 206:4   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 206:23  ✖  Expected newline after ";" in a multi-line declaration block                                                                       declaration-block-semicolon-newline-after        
+ 206:23  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 207:4   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 209:2   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 209:2   ✖  Expected indentation of 0 spaces                                                                                                   indentation                                      
+ 210:1   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 211:2   ✖  Expected indentation of 0 spaces                                                                                                   indentation                                      
+ 211:28  ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 212:9   ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 212:13  ✖  Expected newline after ";" in a multi-line declaration block                                                                       declaration-block-semicolon-newline-after        
+ 212:13  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 216:43  ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 217:11  ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 220:11  ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 224:1   ✖  Expected selector "section.product-description div.burger-item img" to come before selector "header#header div#company-logo img"   no-descending-specificity                        
+ 224:47  ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 225:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 225:8   ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 225:12  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 226:1   ✖  Expected newline before "}" of a multi-line block                                                                                  block-closing-brace-newline-before               
+ 227:1   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 229:45  ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 230:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 231:2   ✖  Expected empty line before comment                                                                                                 comment-empty-line-before                        
+ 231:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 232:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 232:8   ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 233:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 233:10  ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 233:16  ✖  Expected newline after ";" in a multi-line declaration block                                                                       declaration-block-semicolon-newline-after        
+ 233:16  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 234:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 235:1   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 236:1   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 237:1   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 238:1   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 239:2   ✖  Expected newline after "}"                                                                                                         block-closing-brace-newline-after                
+ 239:3   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 241:6   ✖  Expected single space after at-rule name "@media"                                                                                  at-rule-name-space-after                         
+ 242:45  ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 243:19  ✖  Expected newline after ";" in a multi-line declaration block                                                                       declaration-block-semicolon-newline-after        
+ 243:19  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 244:34  ✖  Expected newline after ";" in a multi-line declaration block                                                                       declaration-block-semicolon-newline-after        
+ 244:34  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 245:32  ✖  Expected newline after ";" in a multi-line declaration block                                                                       declaration-block-semicolon-newline-after        
+ 245:32  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 249:2   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 250:1   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 250:45  ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 251:3   ✖  Expected indentation of 4 spaces                                                                                                   indentation                                      
+ 252:3   ✖  Expected indentation of 4 spaces                                                                                                   indentation                                      
+ 253:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 253:3   ✖  Expected newline after "}"                                                                                                         block-closing-brace-newline-after                
+ 253:4   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 255:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 255:48  ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 256:3   ✖  Expected indentation of 4 spaces                                                                                                   indentation                                      
+ 256:9   ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 256:13  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 257:1   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 258:1   ✖  Expected newline before "}" of a multi-line block                                                                                  block-closing-brace-newline-before               
+ 258:2   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 258:2   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 259:1   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 260:1   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 262:25  ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 262:27  ✖  Expected newline after "{" of a multi-line block                                                                                   block-opening-brace-newline-after                
+ 262:27  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 263:9   ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 263:13  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 264:1   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 266:1   ✖  Expected no more than 1 empty line                                                                                                 max-empty-lines                                  
+ 267:1   ✖  Expected newline before "}" of a multi-line block                                                                                  block-closing-brace-newline-before               
+ 267:1   ✖  Expected no more than 1 empty line                                                                                                 max-empty-lines                                  
+ 268:1   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 270:1   ✖  Unexpected duplicate selector "main form div.email-input", first used at line 262                                                  no-duplicate-selectors                           
+ 270:25  ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 270:27  ✖  Expected newline after "{" of a multi-line block                                                                                   block-opening-brace-newline-after                
+ 270:27  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 271:10  ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 272:11  ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 272:16  ✖  Expected newline after ";" in a multi-line declaration block                                                                       declaration-block-semicolon-newline-after        
+ 272:16  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 274:19  ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 274:26  ✖  Expected newline after ";" in a multi-line declaration block                                                                       declaration-block-semicolon-newline-after        
+ 274:26  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 275:23  ✖  Expected newline after ";" in a multi-line declaration block                                                                       declaration-block-semicolon-newline-after        
+ 275:24  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 279:1   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 279:2   ✖  Expected newline after "}"                                                                                                         block-closing-brace-newline-after                
+ 279:2   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 280:1   ✖  Expected empty line before rule                                                                                                    rule-empty-line-before                           
+ 280:2   ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 281:14  ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 284:31  ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 284:33  ✖  Expected newline after "{" of a multi-line block                                                                                   block-opening-brace-newline-after                
+ 284:33  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 285:11  ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 287:9   ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 288:19  ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 288:26  ✖  Expected newline after ";" in a multi-line declaration block                                                                       declaration-block-semicolon-newline-after        
+ 288:26  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 289:23  ✖  Expected newline after ";" in a multi-line declaration block                                                                       declaration-block-semicolon-newline-after        
+ 289:23  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 292:1   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 294:31  ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 294:33  ✖  Expected newline after "{" of a multi-line block                                                                                   block-opening-brace-newline-after                
+ 294:33  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 295:11  ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 298:1   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 300:6   ✖  Expected single space after at-rule name "@media"                                                                                  at-rule-name-space-after                         
+ 301:1   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 302:1   ✖  Unexpected empty line before rule                                                                                                  rule-empty-line-before                           
+ 302:1   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 302:28  ✖  Expected newline after "{" of a multi-line block                                                                                   block-opening-brace-newline-after                
+ 302:28  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 303:3   ✖  Expected indentation of 4 spaces                                                                                                   indentation                                      
+ 304:3   ✖  Expected indentation of 4 spaces                                                                                                   indentation                                      
+ 304:16  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 305:1   ✖  Expected newline before "}" of a multi-line block                                                                                  block-closing-brace-newline-before               
+ 306:1   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 306:1   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 308:1   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 308:31  ✖  Expected single space before "{"                                                                                                   block-opening-brace-space-before                 
+ 308:33  ✖  Expected newline after "{" of a multi-line block                                                                                   block-opening-brace-newline-after                
+ 308:33  ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 309:2   ✖  Expected indentation of 4 spaces                                                                                                   indentation                                      
+ 310:2   ✖  Unexpected shorthand "margin" after "margin-bottom"                                                                                declaration-block-no-shorthand-property-overrides
+ 310:2   ✖  Expected indentation of 4 spaces                                                                                                   indentation                                      
+ 310:9   ✖  Expected single space after ":" with a single-line declaration                                                                     declaration-colon-space-after                    
+ 311:2   ✖  Expected indentation of 4 spaces                                                                                                   indentation                                      
+ 312:1   ✖  Expected indentation of 2 spaces                                                                                                   indentation                                      
+ 313:1   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 314:1   ✖  Unexpected empty line before closing brace                                                                                         block-closing-brace-empty-line-before            
+ 314:2   ✖  Unexpected whitespace at end of line                                                                                               no-eol-whitespace                                
+ 314:2   ✖  Unexpected missing end-of-source newline                                                                                           no-missing-end-of-source-newline
+

@@ -1,3 +1,4 @@
+/*** uncss> filename: style.css ***/
 	:root {
   --titleFont: 'Playfair Display', serif;
   --mainFont: 'PT Serif', serif;
@@ -138,22 +139,6 @@ nav#nav-bar {
   div.line3 {
     margin-top: 0.6px;
   }
-
-  nav#nav-bar .nav-active {
-    transform: translateX(0);
-  }
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 div.youtube-embed {
@@ -258,3 +243,4 @@ main form div.email-input input {
     text-align: center;
   }
 }
+
