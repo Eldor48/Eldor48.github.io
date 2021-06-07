@@ -22,14 +22,14 @@
 <body>
     <header id="header">
         <div id="company-logo">
-            <img src="https://eldor48.github.io/product-landing-page/img/hamburger.svg" alt="hamburger logo" srcset="">
+            <img  id="header-img" src="https://eldor48.github.io/product-landing-page/img/hamburger.svg" alt="hamburger logo" srcset="">
             <!-- <p>Hamburguer Boost</p> -->
         </div>
         <nav id="nav-bar">
             <ul class="nav-links">
-                <li class="nav-link"> <a href="#">Home</a></li>
-                <li class="nav-link"> <a href="#details">Product Details</a></li>
-                <li class="nav-link"><a href="#form">Contact Us</a></li>
+                <li class="nav-link" href="#home"> <a href="#home">Home</a></li>
+                <li class="nav-link" href="#details"> <a href="#details">Product Details</a></li>
+                <li class="nav-link" href="#form"><a href="#form">Contact Us</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -39,10 +39,10 @@
         </nav>
 
     </header>
-    <main>
+    <main id="home">
         <h1>Here you will find the best burgers!</h1>
         <div class="youtube-embed">
-            <iframe src="https://www.youtube.com/embed/JqjWaQyKriI" title="YouTube video player" frameborder="0"
+            <iframe  id="video" src="https://www.youtube.com/embed/JqjWaQyKriI" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
@@ -69,7 +69,7 @@
             <div class="email-input">
                 <label for="email">Email address:
                     <input type="email" name="email" id="email" placeholder="Example: carlos_smith@boosted.com">
-                      <button class="pure-material-button-contained">Send me a message!</button>
+                      <input type="submit" id="submit">Send me a message!</input>
                 </label>
             </div>
 
