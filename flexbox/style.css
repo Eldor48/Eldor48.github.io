@@ -1,0 +1,73 @@
+.box {
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, .1);
+
+
+}
+
+.box1 {
+    background-color: rgb(0, 118, 57);
+}
+
+.box2 {
+    background-color: blueviolet;
+}
+
+.box3 {
+    background-color: chartreuse;
+}
+
+.box4 {
+    background-color: darkgoldenrod;
+}
+
+.box5 {
+    background-color: darkolivegreen;
+}
+
+.box6 {
+    background-color: dodgerblue;
+}
+
+.box7 {
+    background-color: greenyellow;
+}
+
+.box8 {
+    background-color: mediumseagreen;
+}
+
+.box9 {
+    background-color: orange;
+}
+
+.box10 {
+    background-color: steelblue;
+}
+
+
+.container {
+    display: flex;
+   border: 6px solid black;
+   margin: 22px 10px;
+   width: 80%;
+   flex-wrap: wrap;
+   justify-content:center;
+   align-items:center;
+   margin: auto;
+    margin-top: 10px;
+}
+
+.box {
+    flex: 1;
+    flex-basis: calc(100% / 3);
+   padding: 20px;
+  align-self: center;
+   /* margin: 22px; */
+ 
+}
+.box1{
+    flex-grow: 2;
+}

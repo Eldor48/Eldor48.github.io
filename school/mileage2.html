@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Volume</title>
+<script>
+    /* Input: Beginning odometer reading
+     * Input: Ending odometer reading
+     * Input: Number of gallons used
+     * Processing: Determine the efficiency Miles per Gallon
+     * Output: Miles per Gallon
+     */
+function MilesPerGallon() {
+    // Get the odometer readings and the gas usage from the user.
+    let b = parseFloat(document.getElementById('beginOdometerInput').value);
+    let e = parseFloat(document.getElementById('endOdometerInput').value);
+    let g = parseFloat(document.getElementById('gasUsedInput').value);
+    // Compute the Miles per Gallon.
+    let m = (e - b)/g;
+    // Display the Miles per Gallon to the user.
+    document.getElementById('outputDiv').innerHTML = m + " Miles per Gallon for your Journey.";
+}
+</script>
+</head>
+<body>
+Enter Initial Odometer Reading <input type="text" id="beginOdometerInput" size="6"><br>  
+Enter Ending Odometer Reading <input type="text" id="endOdometerInput" size="6"><br>  
+Enter Number of Gallons Used <input type="text" id="gasUsedInput" size="6"><br>  
+<button type="button" onclick="MilesPerGallon()">Calculate</button>  
+<div id="outputDiv"></div>  
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body {
+  font-family: sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+.card {
+  width: 320px;
+  box-shadow: 3px 3px 7px 3px rgb(0, 164, 158);
+  border-radius: 5px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  text-align: center;
+  padding: 1.5%;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 12px 20px 12px;
+  color: #888;
+}
+.viewButton,
+.editButton {
+  font-size: 100%;
+  font-family: "Lato", sans-serif;
+  border: 1px;
+  border-style: solid;
+  background-color: #fff;
+  border-radius: 3px 0px 0px 3px;
+  color: #888;
+}
+
+.editButton {
+  border-radius: 0px 3px 3px 0px;
+  margin: 0;
+  margin-right: 120px;
+  color: #888;
+  /* padding:0;*/
+}
+
+footer .buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <article class="card">
+        <img src="https://picsum.photos/320/240" alt="cardImage" />
+        <p>
+          This is a wider card with supporting text below as a natural-lead-in
+          to additional content. This content is a little bit longer
+        </p>
+        <footer>
+            <div class="buttons">
+              <button class="viewButton">View</button>
+              <button class="editButton">Button</button>
+            </div>
+  
+            <span>9 mins</span>
+          </footer>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rate of Change</title>
+    <script>
+      // Your JavaScript function belongs here.
+    </script>
+  </head>
+
+  <body>
+    <script>
+      function computeRateOfChange() {
+        //Get previous price from the users
+        let previous = parseFloat(document.getElementById("prevPrice").value);
+        //Get previous current from the user
+        let current = parseFloat(document.getElementById("currPrice").value);
+        // Gives user rate of change
+        let rate = (current - previous) / previous;
+        // Rate rounded
+        let rateRounded = rate.toFixed(4);
+
+        document.getElementById("rate").innerHTML =
+          rateRounded + " is the rate of change for this item";
+      }
+    </script>
+    <h1>Rate of Change</h1>
+    Previous Price <input type="text" id="prevPrice" /><br />
+    Current Price <input type="text" id="currPrice" /><br />
+    <button type="button" onclick="computeRateOfChange()">Rate of Change</button
+    ><br />
+    <div id="rate">Rate of Change</div>
+  </body>
+</html>

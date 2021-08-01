@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mileage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #finalResult {
+        font-size: 26px !important;
+        font-family: "Raleway", sans-serif !important;
+        margin-top: 30px !important;
+        font-weight: 900;
+      }
+      #convertionBox {
+        margin: auto;
+        width: 50%;
+        border: 9px solid green;
+        padding: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      /* 
+    Input: Beginning Odometer
+    Input: Ending Odometer
+    Input: Gallons you will use
+    Processing: Determine the efficiency Miles per Gallon
+    Output: Miles per gallon */
+      function MilesPerHour() {
+        // Beginning Odomoter from the text box
+        let Beginning = parseFloat(
+          document.getElementById("BeginningOdometerInput").value
+        );
+        // Ending Odomoter from the text box
+        let Ending = parseFloat(
+          document.getElementById("EndingOdometerInput").value
+        );
+        // Gallons from the text box
+        let Gallons = parseFloat(
+          document.getElementById("GallonsOnTheInput").value
+        );
+        // MilesPerHour for the Final User
+        let MilesHour = Ending - Beginning / Gallons;
+        document.getElementById("finalResult").innerHTML =
+          MilesHour +
+          " are the miles you will drive for your drive. Enjoy the trip!";
+      }
+    </script>
+    <div id="convertionBox">
+      <h1>Calculate your mileage for free!</h1>
+      <p>Enter your beginning odometer reading:</p>
+      <input type="text" id="BeginningOdometerInput" /> <br />
+      <p>Enter your ending odometer reading:</p>
+      <input type="text" id="EndingOdometerInput" /> <br />
+      <p>Enter the gallons you will use:</p>
+      <input type="text" id="GallonsOnTheInput" /> <br />
+      <button type="menu" onclick="MilesPerHour()">Press me</button>
+      <div id="finalResult"></div>
+    </div>
+  </body>
+  <!--Close Enmanuel! Your mileage.html has a calculation error. 
+    You put "let MilesHour = Ending - Beginning / Gallons;" 
+    but it should be "let MilesHour = (Ending - Beginning) / Gallons;". 
+    Remember the order of operations PEMDAS (Please excuse my dear aunt sally). 
+    Division will be done BEFORE subtraction. 
+    You also had a validator error on your mileage.html file.-->
+</html>

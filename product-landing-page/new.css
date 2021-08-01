@@ -1,0 +1,246 @@
+/*** uncss> filename: style.css ***/
+	:root {
+  --titleFont: 'Playfair Display', serif;
+  --mainFont: 'PT Serif', serif;
+  --charcoal: #264653ff;
+  --persian-green: #2a9d8fff;
+  --orange-yellow-crayola: #e9c46aff;
+  --burnt-sienna: #e76f51ff;
+  --columbia-blue: #c8ecfaff;
+  --titleSize: 3.7rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: var(--mainFont);
+  background-color: var(--orange-yellow-crayola);
+  padding: 12px;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+header#header div#company-logo {
+  width: 30%;
+}
+
+section.product-description div.burger-item img {
+  width: 20%;
+}
+
+header#header div#company-logo img {
+  width: 60%;
+}
+
+nav#nav-bar {
+  margin-left: 22px;
+  display: flex;
+  width: 70%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: flex-end;
+  margin-left: 44%;
+  padding: 12px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-size: 1.5vmax;
+  font-family: var(--mainFont);
+  margin-right: 3px;
+  color: white;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links a:hover {
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+  padding-bottom: 3px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-end;
+    margin-left: 44%;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav#nav-bar .nav-links {
+    /* dis:none; */
+    position: absolute;
+    right: 0;
+    height: 82vh;
+    top: 8vh;
+    width: 50%;
+    background-color: var(--orange-yellow-crayola);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    overflow-x: hidden;
+    transition: transform 0.5s ease-in;
+  }
+
+  nav#nav-bar .nav-links li a {
+    opacity: 1;
+    font-size: 23px;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #fafafa7d;
+  }
+
+  header#header div#company-logo {
+    z-index: 1;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    z-index: 2;
+  }
+
+  .burger div {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  div.line2,
+  div.line3 {
+    margin-top: 0.6px;
+  }
+}
+
+div.youtube-embed {
+  margin-bottom: 1%;
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.youtube-embed iframe {
+  width: 60vw;
+  height: 60vh;
+  overflow-x: hidden;
+}
+
+main h1 {
+  font-size: var(--titleSize);
+  text-align: center;
+  font-family: var(--titleFont);
+}
+
+section.product-description {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section.product-description div.burger-item {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid #000;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+section.product-description div.burger-item p {
+  margin: auto;
+  width: 60%;
+  display: block;
+  font-family: var(--mainFont);
+  word-spacing: 4px;
+  font-size: 23px;
+  border-left: 5px solid var(--burnt-sienna);
+  padding-left: 41px;
+}
+
+@media screen and (max-width: 860px) {
+  section.product-description div.burger-item {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  section.product-description div.burger-item p {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  section.product-description div.burger-item img {
+    width: 50%;
+  }
+}
+
+main form div.email-input {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  width: 80%;
+}
+
+h2 {
+  text-align: center;
+}
+
+main form div.email-input label {
+  padding: 12px;
+  font-size: 22px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+main form div.email-input input {
+  padding: 6px;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 600px) {
+  main form div.email-input {
+    text-align: center;
+    margin: auto;
+  }
+
+  main form div.email-input label {
+    margin-bottom: 13px auto;
+    text-align: center;
+  }
+}
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetZone</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ab8a32fcf3.js"
+      crossorigin="anonymous"
+      
+      ></script>
+      <script>
+        let message = "Thank you for your message, we will get to you as soon as possible!"; 
+
+function alerta() {
+    alert(message);
+}
+
+      </script>
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img
+            src="https://cdn.glitch.com/712fd48a-4368-43e2-9233-5a57d42a45d4%2Fil_570xN.1735230548_ssfh%20(1).jpg?v=1604146912057"
+            alt="Logo"
+            width="200"
+            height="200"
+          />
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="faqs.html">FAQS</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </header>
+      <section class="main" id="contact-us">
+        <h1>How can we help?</h1>
+        <img src="https://cdn.glitch.com/712fd48a-4368-43e2-9233-5a57d42a45d4%2Fnighthawk-shoots-BOuggN1tMEk-unsplash.jpg?v=1607790075280" style="width: 85%;" alt="cow">
+        <p>
+          Fill out our contact form, so we can assist you in the best way
+          possible, you'll be hearing an answer from our contact team in the
+          next our after you submit your inquiry
+        </p>
+        <div id="contact-form">
+          <form>
+            <label for="fname">First name:</label><br />
+            <input type="text" id="fname" name="fname" /><br />
+
+            <label for="lname">Last name:</label><br />
+            <input type="text" id="lname" name="lname" /><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br />
+
+            <label for="breed">Pet Breed</label><br />
+            <input type="text" id="breed" name="breed" /><br />
+
+            <label for="pet-type">Pet Type</label><br />
+            <input type="text" id="pet-type" name="pet-type" /><br />
+
+            <label for="location">Location</label><br />
+            <input type="text" id="location" name="location" /><br />
+
+            <label for="message">Your message</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              cols="80"
+              style="resize: none; max-width: 95% ;"
+            ></textarea>
+
+            <button  id="submit-button" value="Submit" onclick="alerta()">Submit</button>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <div class="author">
+          <p>© 2020 Pet Zone - Enmanuel De los Santos - Section 130-17</p>
+          <a href="https://pet-services-request.glitch.me/site-plan.html"
+            >Site Plan</a
+          >
+        </div>
+        <div class="social-media">
+          <a href="https://www.facebook.com/" id="facebook"
+            ><i class="fab fa-facebook"> Facebook </i></a
+          >
+          <a href="https://www.instagram.com/" id="instagram"
+            ><i class="fab fa-instagram"> Instagram </i></a
+          >
+          <a href="https://twitter.com" id="twitter"
+            ><i class="fab fa-twitter"> Twitter </i></a
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

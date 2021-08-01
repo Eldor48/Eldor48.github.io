@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="shorcut icon" type="image/png" href="form.png">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Survey form</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Voluptatem laborum non, assumenda ducimus in sequi.
+      Provident tenetur nemo, ratione quaerat sequi velit? Nesciunt.</p>
+    <form action="thanks.html" id="survey-form">
+      <div class="form-element">
+        <label for="name" id="name-label">Enter your name:</label>
+        <input type="text" id="name" name="name" placeholder="John Thopmson" required>
+      </div>
+
+
+
+      <div class="form-element">
+        <label for="email" id="email-label">Enter your email:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+      </div>
+      <div class="form-element">
+
+        <label for="number" id="number-label">Age: <span>(optional)</span></label>
+        <input type="number" id="number" name="number" min="13" max="92" placeholder="23" required>
+      </div>
+
+      <div class="form-element">
+
+        <label for="browser">Which is your favorite browser?</label>
+      </div>
+
+      <div class="form-element" id="radio-buttons">
+        <label class="radio-father" for="Google-Chrome"><input type="radio" id="Google-Chrome" name="browser" value="Google Chrome"> Google Chrome
+        <span class="checkmark-radio"></span>
+        </label>
+
+        <label class="radio-father" for="Mozilla-Firefox"><input type="radio" id="Mozilla-Firefox" name="browser" value="Mozilla Firefox">Mozilla Firefox
+        <span class="checkmark-radio"></span>
+      </label>
+
+          <label class="radio-father" for="Opera-GX"><input type="radio" id="Opera-GX" name="browser" value="Opera-GX"> Opera GX
+           <span class="checkmark-radio"></span>
+        </label>
+
+      </div>
+
+      <div class="form-element" id="dropdown">
+        <p>Please select your skill level:</p>
+        <select name="dropdown">
+          <option value="beginner">Beginner</option>
+          <option value="medium">Medium</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+
+      <div class="form-element">
+        <p>What do you want to learn?</p>
+
+        <label class="father" for="HTML">HTML
+          <input type="checkbox" id="HTML" name="HTML" value="HTML">
+          <span class="checkmark"></span>
+        </label>
+        <label class="father" for="CSS">CSS
+          <input type="checkbox" id="CSS" name="CSS" value="CSS">
+            <span class="checkmark"></span>
+        </label>
+        <label class="father" for="Javascript">Javascript
+          <input type="checkbox" id="Javascript" name="Javascript" value="Javascript">
+          <span class="checkmark"></span>
+        </label>
+        <label class="father" for="PHP">PHP
+          <input type="checkbox" id="PHP" name="PHP" value="PHP">
+          <span class="checkmark"></span>
+        </label>
+        <label class="father" for="mongoDB">mongoDB
+          <input type="checkbox" id="mongoDB" name="mongoDB" value="mongoDB">
+          <span class="checkmark"></span>
+        </label>
+        <label  class="father" for="reactJS">reactJS
+          <input type="checkbox" id="reactJS" name="reactJS" value="reactJS">
+          <span class="checkmark"></span>
+        </label>
+        <label class="father" for="WordPress">WordPress
+          <input type="checkbox" id="WordPress" name="WordPress" value="WordPress">
+          <span class="checkmark"></span>
+        </label>
+
+      </div>
+
+      <div class="form-element">
+        <label for="message">Your message:</label>
+        <textarea placeholder="Tell us what you think!" id="message" name="message" rows="6" cols="80" style="resize: none; max-width: 95% ;"></textarea>
+
+        <button type="submit" id="submit" class="submit-button" form="survey-form" value="Submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
