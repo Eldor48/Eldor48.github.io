@@ -1,5 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Palette+Mosaic&family=Roboto:wght@100&display=swap');
+
+
+*{
+ --font-family-paragraph: 'Roboto', sans-serif;
+ --font-family-title:  'Gowun Batang', serif;
+}
+body{
+    color:black; 
+    font: 2rem; 
+
+}
+
 .container{
     width: 90%;
-    max-width: 39rem;
+    max-width: 59rem;
     margin: 0 auto;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    margin: 20px auto;
+}
+header{
+    text-align: center;
+}
+
+header h1{
+    font-family: var(--font-family-title);
+    color: black;
+    font-size: 5rem;
+}
+
+header p {
+    font-family: var(--font-family-title);
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    margin-bottom: 42px;
+    color: rgb(102, 102, 102);
+
+}
+
+.container p {
+    display: inline-block; 
+    font-family: var(--font-family-paragraph);
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    
+
+    
 }
