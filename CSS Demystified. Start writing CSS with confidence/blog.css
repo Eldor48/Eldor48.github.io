@@ -5,6 +5,9 @@
  --font-family-paragraph: 'Roboto', sans-serif;
  --font-family-title:  'Gowun Batang', serif;
 }
+html{
+    font-size:16px;
+}
 body{
     color:black; 
     font: 2rem; 
