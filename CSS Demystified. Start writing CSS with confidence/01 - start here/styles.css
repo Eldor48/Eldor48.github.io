@@ -96,7 +96,9 @@ div.pricing-text {
 .plan {
   width: 15vw;
 }
-
+a:link {
+ color: white;
+}
 a:visited {
   color: white;
 }
