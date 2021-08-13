@@ -41,7 +41,8 @@ h1 {
 
 .plan--accent {
   color: #fff;
-  background: linear-gradient(-45deg, #00a1ab, #3741a0);
+  background: rgb(2,0,36);
+background: linear-gradient(149deg, rgba(2,0,36,1) 0%, rgba(40,187,185,1) 0%, rgba(16,202,227,1) 40%, rgba(0,212,255,1) 89%);
 }
 
 .plan__title {
