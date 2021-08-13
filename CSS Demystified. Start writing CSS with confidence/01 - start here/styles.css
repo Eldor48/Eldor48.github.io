@@ -18,6 +18,7 @@ h1 {
 .fs-500 {
   font-size: 1.3125rem;
   margin-top: 0;
+  margin-top: 22px;
 }
 
 .plans {
@@ -71,8 +72,7 @@ h1 {
   padding: 0.5em 0.75em;
   border-radius: 0.25em;
   text-transform: uppercase;
-  font-weight: 700; 
-
+  font-weight: 700;
 }
 
 .button--light {
@@ -85,25 +85,34 @@ h1 {
   background: #4e4e4e;
 }
 
-div.pricing-text{
+div.pricing-text {
   margin-bottom: 2vw;
-} 
-
-.not-active{ 
-color: #00A1AB;
 }
-.plan{
-  width: 15vw ;
-} 
 
-a:visited{
-  color:white; 
+.not-active {
+  color: #00a1ab;
 }
-.button{
-  background-color: #4E4E4E;
-} 
+.plan {
+  width: 15vw;
+}
 
-a.button.middle{
-  background-color: #FFFFFF;
-  color: black ;
+a:visited {
+  color: white;
+}
+.button {
+  background-color: #4e4e4e;
+}
+
+a.button.middle {
+  background-color: #ffffff;
+  color: black;
+}
+
+.green {
+  background-color: #00a1ab;
+  margin-bottom: 22px;
+}
+footer{
+  margin-bottom: 40px;
+  margin-top: 12px;
 }
