@@ -15,6 +15,7 @@
 body {
   font-family: "Roboto", sans-serif;
   text-align: center;
+  margin: 0;
 }
 
 .section-title {
@@ -73,7 +74,8 @@ body {
 }
 
 .plan {
-  width: 200px;
+  width: calc(200px + 2em);
+
   padding: 2em;
   border-radius: 1em;
   margin: 0 0.5em;
@@ -149,4 +151,18 @@ body {
 .team-member img {
   width: 10rem;
   border-radius: 0.25em;
+}
+.team {
+  padding: 1px;
+  width: calc(100% - 0.01rem);
+  margin-top: 22px;
+}
+.team-member {
+  padding: 0.5rem;
+}
+.team-member img {
+  margin-right: 22px;
+}
+a.button {
+  margin-top: 12px;
 }
