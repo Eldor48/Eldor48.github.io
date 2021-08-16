@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 :root {
   --clr-base-400: #5e5e5e;
   --clr-base-500: #494949;
@@ -23,6 +24,15 @@
 
   --shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
   --border-radius: 0.75rem;
+}
+
+div.candidate {
+  border-radius: 12px;
+  box-shadow: 14px 1px 18px 3px rgba(125, 125, 125, 1);
+  padding: 1rem;
+}
+div.candidate img {
+  border-radius: 12px;
 }
 
 /* /////////////////
