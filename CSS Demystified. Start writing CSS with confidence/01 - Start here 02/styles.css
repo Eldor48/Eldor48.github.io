@@ -162,6 +162,7 @@ body {
 }
 .team-member img {
   margin-right: 22px;
+  order: 2;
 }
 a.button {
   margin-top: 12px;
