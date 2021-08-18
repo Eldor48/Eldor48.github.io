@@ -26,7 +26,10 @@
   --shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
   --border-radius: 0.75rem;
 }
-
+*::before, 
+*::after{
+  box-sizing: border-box;
+}
 div.candidate {
   border-radius: 12px;
   box-shadow: 14px 1px 18px 3px rgba(125, 125, 125, 1);
