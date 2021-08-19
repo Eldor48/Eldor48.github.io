@@ -10,18 +10,6 @@ font-family: 'PT Sans', sans-serif;
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
-
-/* Utility classes */
-.flow-content > * + * {
-  margin-top: 1rem;
-}
-
 /* general styling */
 
 body {
@@ -31,21 +19,21 @@ body {
   margin: 0;
 }
 
-h1 {
-  font-weight: 400;
-}
-
 .hero {
+  display: flow-root;
   background-image: url(assets/hero.jpg);
   background-size: cover;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  /* padding-top: 10rem;
+  padding-bottom: 10rem; */
 }
 
 .hero__content {
   background-color: rgba(255, 255, 255, 1);
-  width: 50rem;
+  width: 48rem;
   padding: 3rem 2rem;
   margin: 0 auto;
   text-align: center;
+
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }

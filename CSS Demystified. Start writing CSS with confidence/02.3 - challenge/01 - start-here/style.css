@@ -1,0 +1,9 @@
+/* Font used
+font-family: 'PT Sans', sans-serif; 
+/01 - start-here/assets/hero.jpg
+*/
+
+html{
+    background: url("/01 - start-here/assets/hero.jpg") no-repeat center center fixed; 
+}
+
