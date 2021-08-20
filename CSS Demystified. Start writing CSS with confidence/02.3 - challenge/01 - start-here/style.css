@@ -1,9 +1,46 @@
 /* Font used
 font-family: 'PT Sans', sans-serif; 
-/01 - start-here/assets/hero.jpg
-*/
+/* ../01 - start-here/assets/hero.jpg  */
 
-html{
-    background: url("/01 - start-here/assets/hero.jpg") no-repeat center center fixed; 
+html {
+  background: url("../01 - start-here/assets/hero.jpg") no-repeat center center
+    fixed;
+    font-family: 'PT Sans', sans-serif;
+}
+.hero{
+   width: 45%; 
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 42px;
+  text-align: center;
+}
+.hero .hero__content h1{
+  font-family: 'PT Sans', sans-serif; 
+
+}
+.hero__content{
+  line-height: 1.5;
 }
 
+.light{
+  font-weight: 100;
+}
+a.btn{
+  background-color: #59E89C;
+  padding: 1rem;
+  display: inline-block;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+  width: 50%;
+  margin: auto;
+  font-weight: 900;
+}
+
+a.btn:visited{
+  color: black;
+}
