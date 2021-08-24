@@ -4,7 +4,7 @@
   --naples-yellow: #85CB33;
   --mindaro: #315659;
   --polished-pine: #69a197ff;
-  --gray-web: #817f82ff;
+  --gray-web: #9900FF;
   --opera-mauve: #ae8ca3ff;
   --cadet-blue-crayola: #a2abb5ff;
   --middle-blue-green: #4357AD;
@@ -105,4 +105,42 @@ p {
 
 .bubble{
    z-index: 1;
+}
+
+.custom-shape-divider-bottom-1629781456 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1629781456 svg {
+  position: relative;
+  display: block;
+  width: calc(188% + 1.3px);
+  height: 241px;
+}
+
+.custom-shape-divider-bottom-1629781456 .shape-fill {
+  fill: #143A58;
+}
+
+.spacer{
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1{
+  background-image: url('./layered-peaks-haikei.svg');
+}
+.layer2{
+  background-image: url('./layered-steps-haikei.svg');
+}
+.flip{
+  transform: rotate(180deg);
 }
