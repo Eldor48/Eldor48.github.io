@@ -30,14 +30,14 @@ html {
 }
 a.btn{
   background-color: #59E89C;
-  padding: 1rem;
+  padding: 1rem 0;
   display: inline-block;
-  display: block;
+  text-align: center;
   text-decoration: none;
   color: black;
   font-size: 23px;
   width: 50%;
-  margin: auto;
+  margin: auto 0 !important;
   font-weight: 900;
 }
 
