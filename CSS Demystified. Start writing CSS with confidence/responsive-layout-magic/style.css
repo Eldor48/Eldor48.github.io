@@ -69,58 +69,61 @@ h1 span {
   color: var(--clr-neutral-900);
 }
 
-
-section.hero div.container div.child-container{
- display: grid; 
- grid-template-columns: 50% 50%;
-grid-template-rows: 1fr;
-grid-gap: 12px;
- justify-items: center;
- align-items: center;
-margin: 0 auto;
-
+section.hero div.container div.child-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  grid-gap: 12px;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
-section.hero{
+section.hero {
   width: 100%;
   margin: auto;
   height: auto;
-  padding: 48.75px;
- 
+  padding: 10rem;
 }
 
-section.hero img{
+section.hero img {
   width: 100%;
- 
 }
 
-section.mastering{
+section.mastering {
   background-color: var(--clr-neutral-900);
+  padding: 8rem;
 }
 
- section.mastering h2{
-   color: var(--clr-accent-400);
-
- }
- section.mastering ul li p, h3 {
+section.mastering h2 {
+  color: var(--clr-accent-400);
+}
+section.mastering ul li p,
+h3 {
   color: white;
- }
+}
 
+section.mastering ul {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
 
- section.mastering ul {
-   
- }
-@media (max-width: 700px) {
-  section.hero div.container div.child-container{
-    display: grid; 
+section.mastering ul li img {
+  width: 90%;
+}
+@media (max-width: 850px) {
+  section.hero div.container div.child-container {
+    display: grid;
     grid-template-columns: 1fr;
-   grid-template-rows: 1fr 1fr;
-   grid-gap: 12px;
-   
-   
-}
-section.hero img{
-  width: 100%;
- 
-}
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 12px;
+  }
+  section.hero img {
+    width: 100%;
+  }
+
+  section.hero {
+    padding: 4rem;
+  }
 }
