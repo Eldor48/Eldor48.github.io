@@ -68,3 +68,26 @@ h1 span {
   background-color: var(--clr-accent-400);
   color: var(--clr-neutral-900);
 }
+
+
+section.hero div.container div.child-container{
+ display: grid; 
+ grid-template-columns: 50% 50%;
+ justify-items: center;
+ align-items: center;
+margin: 0 auto;
+
+}
+
+section.hero{
+  width: 100%;
+  margin: auto;
+  height: auto;
+  padding: 48.75px;
+ 
+}
+
+section.hero img{
+  width: 100%;
+ 
+}
