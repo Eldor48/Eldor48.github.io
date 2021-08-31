@@ -94,7 +94,22 @@ section.hero img{
  
 }
 
+section.mastering{
+  background-color: var(--clr-neutral-900);
+}
 
+ section.mastering h2{
+   color: var(--clr-accent-400);
+
+ }
+ section.mastering ul li p, h3 {
+  color: white;
+ }
+
+
+ section.mastering ul {
+   
+ }
 @media (max-width: 700px) {
   section.hero div.container div.child-container{
     display: grid; 
@@ -103,5 +118,9 @@ section.hero img{
    grid-gap: 12px;
    
    
+}
+section.hero img{
+  width: 100%;
+ 
 }
 }
