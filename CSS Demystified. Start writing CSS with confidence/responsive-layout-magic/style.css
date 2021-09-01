@@ -113,6 +113,44 @@ section.mastering ul {
 section.mastering ul li img {
   width: 100%;
 }
+
+section.join{
+  padding: 2.40vw;
+}
+section.join h3{
+  color: #000;
+}
+
+
+section.join ul{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3vw;
+}
+section.join ul li{
+ 
+  padding-top: 3vw;
+}
+
+section.join ul li {
+  list-style-type: none;
+}
+
+section.join ul li img{
+  width: 50%;
+}
+section.cta{
+  background: url("./assets/cta-bg.jpg");
+  color: white;
+  padding: 15vw;
+  text-align: center;
+  line-height:2;
+}
+
+section.cta a.btn{
+ margin-top:4vw;
+}
 @media (max-width: 850px) {
   section.hero div.container div.child-container {
     display: grid;
@@ -135,6 +173,13 @@ section.mastering ul li img {
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  section.join ul{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3vw;
+  }
 }
 
 
@@ -148,5 +193,14 @@ section.mastering ul li img {
   section.mastering h2{
     text-align: center;
     margin-bottom: 3vw;
+  }
+
+  section.join ul{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    padding: 3vw;
+  place-items: center;
+  text-align: center;
   }
 }
