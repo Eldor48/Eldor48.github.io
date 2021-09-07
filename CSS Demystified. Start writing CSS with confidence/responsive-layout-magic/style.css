@@ -142,6 +142,7 @@ section.join ul li img{
 }
 section.cta{
   background: url("./assets/cta-bg.jpg");
+  background-size:cover;
   color: white;
   padding: 15vw;
   text-align: center;
