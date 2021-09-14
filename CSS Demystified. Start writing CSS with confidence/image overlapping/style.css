@@ -149,7 +149,7 @@ header {
   header {
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 10; 
   }
 }
 
@@ -190,7 +190,7 @@ section {
 
 .hero img {
   transform: translateY(2em);
-  z-index: -1 !important;
+ 
 }
 
 @media (min-width: 40em) {
