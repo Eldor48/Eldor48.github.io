@@ -18,9 +18,9 @@ drag_constant = float(input("Drag constant (0.5 for sphere, 1.1 for cylinder): \
 
 c = (1/2) * density * cross_sectional_area * drag_constant
 
-velocity = math.sqrt(mass * gravity / c) * (1 - math.exp(-math.sqrt(mass* gravity * c) / mass)* time)
+velocity = math.sqrt(mass * gravity / c) * (1 - math.exp((-math.sqrt(mass* gravity * c) / mass)* time))
 
 print(f"The inner value of c is: {c:.3f} \n")
 
-print(f"The velocity after {time:.0f} seconds is: {velocity:.3f}")
+print(f"The velocity after {time:.0f} seconds is: {velocity:.3f} m/s")
 
