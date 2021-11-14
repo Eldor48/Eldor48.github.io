@@ -12,7 +12,7 @@ if match_flashlight.lower().strip() == "match":
             print("You pick the crossbow, and now you are shooting and running from the spider. Since you have used this weapon before, you defeat the spider\n without much hassle, and then you go into its cave\n and get the biggest prize.")
         else:
             print("Type something else.")
-    elif run_hide.lower().strip() == "hide":
+    elif run_hide.lower() == "hide":
         left_right = input("You decided to hide behind the bush behind you, \nwhen you look closer, you see that there are two pathways, \none goes on the RIGHT, and the other one goes on the LEFT, \nwhich one do you choose?")
         if left_right.lower().strip() == "right":
             print("Since you chose the right, you keep walking and after being diligent on you journey, you found your way home.")
