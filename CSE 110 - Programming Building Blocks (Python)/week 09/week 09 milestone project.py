@@ -1,9 +1,14 @@
 items = []
 itemName = ''
 itemPrice = ''
-while itemName  != 'quit' or itemPrice != 'quit':
-    itemName = input('What item would you like to add?')
+while True:
+    itemName = input('What item would you like to add? ')
+    if itemName.lower().strip() == 'quit':
+        break
     itemPrice = input(f'What is the price of {itemName}?')
-    items.append(itemName + ' $' + itemPrice)
-for item in items[:-1]:
+    item = f'{itemName} ${itemPrice}'
+    items.append(item)
+    print(f'{itemName} has been added to your cart.')
+for item in items:
     print(item)
+print('Thank you for shopping with us!') 
