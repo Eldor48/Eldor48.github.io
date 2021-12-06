@@ -9,6 +9,6 @@ while True:
     item = f'{itemName} ${itemPrice}'
     items.append(item)
     print(f'{itemName} has been added to your cart.')
-for item in items:
-    print(item)
+for number, item in  enumerate(items, start=1):
+    print(number, item)
 print('Thank you for shopping with us!') 
