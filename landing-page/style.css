@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Montserrat&family=Roboto:wght@100&display=swap');
+:root{
+ --title-font-family: 'Roboto', sans-serif;
+ --paragraph-font-family: 'Licorice', cursive;
+    --heading-font-family: 'Montserrat', sans-serif;
+}
