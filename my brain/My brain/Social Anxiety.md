@@ -1,0 +1,1 @@
+Realmente me molesta en sobremanera cuando estoy hablando con alguien, especialmente mujeres(creo que solo con mujeres), y siento esta #awkwardness sin motivo alguno. Hay unos libros que tengo en queue que talvez me ayude con este problema, o quien sabe, talvez todo se vuelva peor. 

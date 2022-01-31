@@ -10,7 +10,8 @@
           "type": "markdown",
           "state": {
             "file": "CSS Notes.md",
-            "mode": "source"
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -39,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#awkwardness",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,6 +89,8 @@
   },
   "active": "ebacca7d4e178916",
   "lastOpenFiles": [
-    "CSS Notes.md"
+    "CSS Notes.md",
+    "Social Anxiety.md",
+    "Clase de Insitituto 27-01-2022.md"
   ]
 }
