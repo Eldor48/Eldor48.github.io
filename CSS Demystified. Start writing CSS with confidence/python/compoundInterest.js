@@ -3,12 +3,11 @@ let percentage = 1.05 // interest rate
 let years = 10 // number of years
 
 function compoundInterest(money, percentage, years) {
-    moneygenerated = money * Math.pow(1 + percentage, years)
+   return moneygenerated = money * Math.pow(1 + percentage, years)
   }
 
 
-let moneyWithInterest = compoundInterest(400, .08, 10)  // should return 438.8
+let moneyWithInterest = Math.round(compoundInterest(400, .07, 10)) 
 
-moneyWithInterest; 
-
+console.log(moneyWithInterest)  
 
