@@ -94,6 +94,12 @@ h3 {
 
 /* components */
 
+/* general layount */
+
+section {
+  padding: 10rem 0;
+}
+
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -102,4 +108,9 @@ h3 {
   background: var(--clr-primary-400);
   color: var(--clr-neutral-100);
   padding: 0.5em 1.25em;
+}
+
+.card {
+  padding: var(--spacer);
+  box-shadow: 0 0 10rem rgba(0,  0, 0, 0.20);   
 }
