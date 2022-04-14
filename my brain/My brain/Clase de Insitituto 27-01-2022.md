@@ -1,1 +1,0 @@
-La palabra pugnar significa luchar, en, se habla de que los lamanitas ya no pugnaron mas en contra de Dios, no lucharon mas en contra de ellos.
