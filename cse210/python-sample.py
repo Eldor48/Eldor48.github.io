@@ -12,4 +12,5 @@ for i in range(3, 0, -1):
 
 # Use a Python f-string to format a greeting
 # for the user and then print the greeting.
-print(f"Welcome to CSE 210, {name}!")
+print(f"Welcome to CSE 210, {name}!") 
+print("Welcome to CSE 210, " + name + "!")
