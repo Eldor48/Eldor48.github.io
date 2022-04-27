@@ -15,3 +15,8 @@ for i in range(3, 0, -1):
 print(f"Welcome to CSE 210, {name}!") 
 print("Welcome to CSE 210, " + name + "!")
 print("Welcome to CSE 210, " + name + "!")
+
+a = ['mn', 'op']
+for i in a:
+    i.upper
+    print(a)
