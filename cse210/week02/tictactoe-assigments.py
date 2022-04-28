@@ -11,7 +11,7 @@ def main():
         make_move(player, board)
         player = next_player(player)
     display_board(board)
-    print("Good game. Thanks for playing!") 
+    print("Good game. Thanks for playing it!") 
 
 def create_board():
     board = []
