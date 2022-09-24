@@ -17,6 +17,6 @@ def multiples_of(number, length):
 
 
 
-print(multiples_of(7, 5))    # [7, 14, 21, 28, 35]
+print(multiples_of(4, 5))    # [7, 14, 21, 28, 35]
 print(multiples_of(1.5, 10)) # [1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0]
-print(multiples_of(-2, 10))  # [-2, -4, -6, -8, -10, -12, -14, -16, -18, -20]
+print(multiples_of(-2, 115))  # [-2, -4, -6, -8, -10, -12, -14, -16, -18, -20]

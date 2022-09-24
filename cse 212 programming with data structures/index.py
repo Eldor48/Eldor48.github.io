@@ -17,7 +17,7 @@ my_list = [x for x in range(100) if x % 2 == 0]
 # Do the same thing by using a different version of range
 my_list = [x for x in range(0, 100, 2)]
 
-# Create a list of words that have an 'E'
+# Create a list of words that have an 'E'	
 my_words = ['CAKE', 'DOG', 'APPLE']
 words_with_e = [word for word in my_words if 'E' in word]
 
