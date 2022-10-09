@@ -23,3 +23,10 @@ def rotate_list_right(list, num):
 print(rotate_list_right([1,2,3,4,5,6,7,8,9],1)) # [9, 1, 2, 3, 4, 5, 6, 7, 8]
 print(rotate_list_right([1,2,3,4,5,6,7,8,9],5)) # [5, 6, 7, 8, 9, 1, 2, 3, 4]
 print(rotate_list_right([1,2,3,4,5,6,7,8,9],9)) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+number = [1,2,3,4,5,6,7,8,9]
+
+number.rotate(4)
+
+print(number)
