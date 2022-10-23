@@ -157,8 +157,8 @@ def is_anagram(term1, term2):
                        anagram = False
                        return anagram
                 else:
-                    anagram = False
-                    return anagram
+                 anagram = False
+                 return anagram
             else:
                 anagram = False
                 return anagram
@@ -210,7 +210,7 @@ class Maze:
         the maze.
         """
         self.maze_map = maze_map
-        self.curr_x = 1
+        self.curr_x = 1 
         self.curr_y = 1
 
     def move_left(self):
@@ -218,28 +218,53 @@ class Maze:
         Check to see if you can move left.  If you can, then move.  If you
         can't move, then display "Can't go that way!"
         """
-        pass
+        directions = self.maze_map[self.curr_x, self.curr_y]
+        if directions[0] == True:
+           self.curr_x -= 1            
+           print("You can move")
+        else: 
+            print("Can't go that way!")
+        
 
     def move_right(self):
         """
         Check to see if you can move right.  If you can, then move.  If you
         can't move, then display "Can't go that way!"
         """        
-        pass
-
+        
+        directions = self.maze_map[self.curr_x, self.curr_y]
+        if directions[1] == True:
+            self.curr_x += 1
+            print("You can move")
+        else:
+            print("Can't go that way!")
+        
     def move_up(self):
         """
         Check to see if you can move up.  If you can, then move.  If you
         can't move, then display "Can't go that way!"
         """
-        pass
+        
+        directions = self.maze_map[self.curr_x, self.curr_y]
+        if directions[2] == True:
+            self.curr_y -= 1
+            print("You can move")
+        else:
+            print("Can't go that way!")
 
     def move_down(self):
         """
         Check to see if you can move down.  If you can, then move.  If you
         can't move, then display "Can't go that way!"
         """
-        pass
+        directions = self.maze_map[self.curr_x, self.curr_y]
+        if directions[3] == True:
+           self.curr_y += 1
+           print("You can move")
+        else:
+           print("Error: Can't go that way!")
+        
+        
     
     def show_status(self):
         print("Current location (x={} , y={})".format(self.curr_x, self.curr_y))
@@ -334,7 +359,10 @@ def earthquake_daily_summary():
     data = req.json() # The .json() function will convert the json data from the server to a dictionary
 
     # ADD YOUR CODE HERE
-
+    for earthquake in data["features"]:                         
+        place = earthquake["properties"]['place']               
+        magnitude = str(earthquake["properties"]['mag'])        
+        print(place + ' - Mag ' + magnitude)                    
 # Sample Test Cases (may not be comprehensive) 
 print("\n=========== PROBLEM 5 TESTS ===========")
 earthquake_daily_summary()
