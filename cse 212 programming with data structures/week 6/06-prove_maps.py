@@ -131,38 +131,38 @@ def is_anagram(term1, term2):
         for part in tm1:
             m1 +=part.lower()
     except:
-            m1 = term1.lower()
+        m1 = term1.lower()
     try:
-            tm2 = term2.split(" ")
-            for part in tm2:
-                w2 +=part.lower()
+        tm2 = term2.split(" ")
+        for part in tm2:
+            w2 +=part.lower()
     except:
-            m2 = term2.lower()
+        m2 = term2.lower()
         
     if len(m1) == len(m2):
-            for caracther in term1:
-               if caracther in caracthers1:
+        for caracther in term1:
+            if caracther in caracthers1:
                 caracthers1[caracther] += 1
-               else:
+            else:
                 caracthers1[caracther] = 1
             
-            for caracther in term2:
-                if caracther in caracthers2:
-                    caracthers2[caracther] += 1
-                else:
-                    caracthers2[caracther] = 1
-            for caracther in caracthers2:
-                if caracther in caracthers1:
-                    if caracthers2[caracther] != caracthers1[caracther]:
+        for caracther in term2:
+            if caracther in caracthers2:
+                caracthers2[caracther] += 1
+            else:
+                caracthers2[caracther] = 1
+        for caracther in caracthers2:
+            if caracther in caracthers1:
+                if caracthers2[caracther] != caracthers1[caracther]:
                        anagram = False
                        return anagram
-                    else:
-                        anagram = False
-                        return anagram
                 else:
                     anagram = False
                     return anagram
+            else:
+                anagram = False
                 return anagram
+        return anagram
                     
             
 
