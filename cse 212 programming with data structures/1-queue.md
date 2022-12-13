@@ -58,3 +58,10 @@ while not tasks.empty():
 ```
 
 In this example, we create a queue to store the tasks that are submitted by the users. Then, we add some tasks to the queue using the put() method. Finally, we use a while loop to retrieve and process the tasks in the queue until the queue is empty. In this case, since we added the tasks to the queue in a FIFO manner, the first task that is processed is "Task 1", followed by "Task 2" and "Task 3".
+
+### Real-life example
+
+![Figure 1](grocery-store.jpg)
+<figcaption align = "center"><b>Figure 1 - Queue</b></figcaption>
+
+One example of a real-life situation where a queue is used is in a grocery store. When customers enter the store, they typically form a queue at the checkout counter to pay for their items. The customers are served in the order that they arrived at the counter, with the first customer in the queue being served first. This is an example of a FIFO (first-in, first-out) queue, where the first person to arrive is the first to be served. In Python, we could implement this using the Queue class from the queue module:
