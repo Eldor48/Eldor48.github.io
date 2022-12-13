@@ -89,3 +89,126 @@ while not customers.empty():
 ```
 
 In this example, we create a queue to store the customers that are waiting at the checkout counter. Then, we add some customers to the queue using the put() method. Finally, we use a while loop to retrieve and serve the customers in the queue until the queue is empty. In this case, since we added the customers to the queue in a FIFO manner, the first customer to be served is "Customer 1", followed by "Customer 2" and "Customer 3".
+
+
+## Reading and writing from a queue
+
+To read from a queue in Python, you can use the get() method of the Queue class. This method retrieves an item from the queue and removes it from the queue. Here is an example of how to use the get() method to read from a queue:
+
+
+```
+from queue import Queue
+
+# Create a queue
+q = Queue()
+
+# Add data to the queue
+q.put("data1")
+q.put("data2")
+q.put("data3")
+
+# Retrieve data from the queue
+data1 = q.get()
+data2 = q.get()
+data3 = q.get()
+
+# Print the data
+print(data1)  # Output: data1
+print(data2)  # Output: data2
+print(data3)  # Output: data3
+
+```
+
+In this example, we create a queue and add some data to it using the put() method. Then, we use the get() method to retrieve the data from the queue and store it in the data1, data2, and data3 variables. Finally, we print the data to the console to verify that it was retrieved correctly.
+
+To write to a queue in Python, you can use the put() method of the Queue class. This method adds an item to the queue. Here is an example of how to use the put() method to write to a queue:
+
+```
+from queue import Queue
+
+# Create a queue
+q = Queue()
+
+# Add data to the queue
+q.put("data1")
+q.put("data2")
+q.put("data3")
+
+``` 
+
+In this example, we create a queue and use the put() method to add three items to the queue: "data1", "data2", and "data3". This data will be added to the queue in the order that it was added, so the first item to be retrieved from the queue will be "data1", followed by "data2" and "data3".
+
+## Python Syntax
+As we could see in the previous section, a queue can be implemented on Python by using a list. 
+The following pieces of code can be used to implement a queue in Python:
+<br> 
+
+* >``` list.append(item) ```: It adds a new item to the back of the queue
+* >``` data = list.pop(0) ```: It removes and returns the item at the front of the queue
+* >``` length = len(list) ```: It returns the size of the queue
+* >``` if len(list) = 0 ```: It checks if the queue is empty. If it is, it returns true
+## Example: Grocery store software Using a Queue in python
+
+In the example below, we will write a simple grocery strore manager program, which will use a class to implement a queue. Every time this class is called, a list will be created where the elements of the queue will be added. The requirements for the software are the following:
+
+* Allow the user to add receipts to the queue to be printed. Maximum amount of files allowed is 10
+* Simulate the behavior of a printer while printing and dequeue the files already printed
+* Print the name of files already printed
+* Create a method that returns the size of the queue in order to use that value for the logic of the code
+
+```
+# Import the Queue class from the queue module
+from queue import Queue
+
+class GroceryStoreManager:
+    def __init__(self):
+        # Initialize the queue with a maximum size of 10
+        self.queue = Queue(maxsize=10)
+
+    def add_receipt(self, receipt):
+        # Add the receipt to the queue
+        self.queue.put(receipt)
+
+    def print_receipts(self):
+        # Print the receipts in the queue
+        while not self.queue.empty():
+            # Simulate the printing process by sleeping for 1 second
+            time.sleep(1)
+
+            # Dequeue the receipt and print its name
+            receipt = self.queue.get()
+            print(receipt.name)
+
+    def queue_size(self):
+        # Return the size of the queue
+        return self.queue.qsize()
+
+```
+To use this class, you would create an instance of the GroceryStoreManager class, and then call the appropriate methods to add receipts to the queue and print them. Here is an example:
+
+```
+
+manager = GroceryStoreManager()
+
+# Add some receipts to the queue
+manager.add_receipt(Receipt("John Doe", "123 Main St", ["milk", "bread", "eggs"]))
+manager.add_receipt(Receipt("Jane Doe", "456 Main St", ["soda", "chips", "cookies"]))
+
+# Print the receipts in the queue
+manager.print_receipts()
+
+``` 
+
+This code would output the names of the receipts that were added to the queue, simulating the printing process by sleeping for 1 second between each receipt. You can also use the queue_size method to check the size of the queue at any time.
+
+## Problem to solve 
+
+Suppose you are given a list of names and you want to find the longest name in the list. However, you can only access one element of the list at a time and you can only iterate through the list in a specific order.
+
+To solve this problem, you can use a queue to store the names that you have yet to process. Every time you access an element of the list, you can add it to the queue. You can then iterate through the queue, comparing each name to the current longest name and updating the longest name if necessary.
+
+## Solution
+
+You can check your work with the solution here: [Solution](namelist_handler.py)
+
+
