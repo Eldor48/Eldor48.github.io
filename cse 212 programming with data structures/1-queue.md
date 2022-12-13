@@ -62,6 +62,30 @@ In this example, we create a queue to store the tasks that are submitted by the 
 ### Real-life example
 
 ![Figure 1](grocery-store.jpg)
-<figcaption align = "center"><b>Figure 1 - Queue</b></figcaption>
+<figcaption align = "center"><b>Figure 1 - Person at a grocery store</b></figcaption>
 
 One example of a real-life situation where a queue is used is in a grocery store. When customers enter the store, they typically form a queue at the checkout counter to pay for their items. The customers are served in the order that they arrived at the counter, with the first customer in the queue being served first. This is an example of a FIFO (first-in, first-out) queue, where the first person to arrive is the first to be served. In Python, we could implement this using the Queue class from the queue module:
+
+```
+from queue import Queue
+
+# Create a queue to store the customers
+customers = Queue()
+
+# Add customers to the queue
+customers.put("Customer 1")
+customers.put("Customer 2")
+customers.put("Customer 3")
+
+# Serve the customers in the queue
+while not customers.empty():
+    # Retrieve the next customer from the queue
+    customer = customers.get()
+
+    # Serve the customer
+    print("Serving customer:", customer)
+
+
+```
+
+In this example, we create a queue to store the customers that are waiting at the checkout counter. Then, we add some customers to the queue using the put() method. Finally, we use a while loop to retrieve and serve the customers in the queue until the queue is empty. In this case, since we added the customers to the queue in a FIFO manner, the first customer to be served is "Customer 1", followed by "Customer 2" and "Customer 3".
