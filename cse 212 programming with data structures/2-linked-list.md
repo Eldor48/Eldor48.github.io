@@ -84,7 +84,20 @@ node = head
 while node is not None:
     print(node.val)
     node = node.next
-````
+```
 
 Of course, the find_node_with_value() and ListNode classes used in these examples are not part of the python standard library and would need to be defined in your own code.
 
+## Python Syntax
+
+Besides the methods previously mentioned for the implementation of the linked list, Python also has a built-in linked list already. The commands to use this linked list are the following:
+
+* >``` linked_list = deque() ```: It creates a empty linked list
+* >``` linked_list.appendleft(value) ```: It inserts a new head
+* >``` linked_list.append(value) ```: It inserts a new tail
+* >``` linked_list.insert(i, value) ```: It inserts a new value after the node "i"
+* >``` data = linked_list.popleft() ```: It removes the head and stores it in a variable
+* >``` data = linked_list.pop() ```: It removes the tail and stores it in a variable
+* >``` del linked_list[i] ```: It removes a value in the middle of the list
+* >``` length = len(list) ```: It returns the size of the linked list
+* >``` if len(list) = 0 ```: It checks if the linked list is empty. If it's, it returns true
