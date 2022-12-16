@@ -1,4 +1,4 @@
-## Linked lists 
+# Linked lists 
 
 A linked list is a data structure that consists of a sequence of nodes, where each node stores some data and a reference (or "link") to the next node in the sequence. Unlike an array, which provides random access to its elements, a linked list only allows access to its elements in sequential order.
 
@@ -101,3 +101,16 @@ Besides the methods previously mentioned for the implementation of the linked li
 * >``` del linked_list[i] ```: It removes a value in the middle of the list
 * >``` length = len(list) ```: It returns the size of the linked list
 * >``` if len(list) = 0 ```: It checks if the linked list is empty. If it's, it returns true
+
+##  Photo Viewer Software Using a Linked List
+
+This program is a photo viewer software that uses a linked list in Python. It has a LinkedList class which is used to store the photos, and a Node class which is used to create individual nodes for each photo. The PhotoViewer class is used to display the photos and navigate between them. The main function provides a menu for the user to interact with the program and select the desired option - displaying the current photo, navigating to the next or previous photo, or exiting the program.
+
+[Program](photo_vw.py)
+
+
+## Exercise:
+
+Implement a basic linked list in Python. 
+
+[Solution](linked-list.py)
