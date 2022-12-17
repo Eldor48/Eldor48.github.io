@@ -286,3 +286,130 @@ print(tree["car"])  # prints 2
 
 ``` 
 You can also use the Trie class to search for strings in the tree, delete strings from the tree, and perform other operations. For more information, you can refer to the documentation for the Trie class: https://pytrie.readthedocs.io/en/latest/api.html#trie-class
+
+
+## How to Insert and Access Data From a Tree
+
+To insert data into a tree, you need to follow the rules of the specific type of tree you are using. For example, in a binary search tree, you need to insert the data in a way that maintains the property that the left child of a node is less than the node, and the right child is greater than the node.
+
+Here's an example of how to insert data into a binary search tree in Python:
+
+```
+class Node:
+    def __init__(self, data):
+        self.left = None
+        self.right = None
+        self.data = data
+
+def insert(root, node):
+    if root is None:
+        root = node
+    else:
+        if root.data < node.data:
+            if root.right is None:
+                root.right = node
+            else:
+                insert(root.right, node)
+        else:
+            if root.left is None:
+                root.left = node
+            else:
+                insert(root.left, node)
+
+root = Node(5)
+insert(root, Node(3))
+insert(root, Node(7))
+insert(root, Node(2))
+
+
+```
+
+To access data from a tree, you can use a tree traversal algorithm to visit each node in the tree and process the data stored at each node. There are several different tree traversal algorithms, including pre-order, in-order, and post-order traversal. Here's an example of how to perform an in-order traversal of a binary search tree in Python:
+
+```
+def inorder(root):
+    if root:
+        inorder(root.left)
+        print(root.data)
+        inorder(root.right)
+
+inorder(root)  # prints 2 3 5 7
+
+
+```
+
+Keep in mind that the specific steps for inserting and accessing data from a tree will depend on the type of tree you are using and the specific requirements of your application.
+
+## Example: List of integers
+
+Problem: You are given a list of integers and you need to insert them into a binary search tree. You also need to implement a function that searches for a given value in the tree and returns the node containing the value, or None if the value is not present in the tree.
+
+Solution: First, we'll define the Node class to represent a node in the tree. Each node has a left and right child and a data value. We'll also define the insert function to insert a new node into the tree. The insert function will follow the rules of a binary search tree by inserting the new node as the left child if the data value is less than the current node, or as the right child if the data value is greater than the current node.
+
+```
+class Node:
+    def __init__(self, data):
+        self.left = None
+        self.right = None
+        self.data = data
+
+def insert(root, node):
+    if root is None:
+        root = node
+    else:
+        if root.data < node.data:
+            if root.right is None:
+                root.right = node
+            else:
+                insert(root.right, node)
+        else:
+            if root.left is None:
+                root.left = node
+            else:
+                insert(root.left, node)
+```
+
+Next, we'll define the search function to search for a given value in the tree. The search function will use a recursive approach, starting at the root node and then searching the left or right subtree depending on whether the data value is less than or greater than the current node. If the value is not found, the function will return None.
+
+```
+def search(root, data):
+    if root is None or root.data == data:
+        return root
+    if root.data < data:
+        return search(root.right, data)
+    else:
+        return search(root.left, data)
+```
+
+Finally, we can use these functions to insert a list of integers into the tree and search for a given value:
+
+```
+# Create the root node
+root = Node(5)
+
+# Insert some values into the tree
+insert(root, Node(3))
+insert(root, Node(7))
+insert(root, Node(2))
+insert(root, Node(6))
+
+# Search for a value in the tree
+node = search(root, 6)
+if node:
+    print(f"Found value {node.data} in the tree")
+else:
+    print("Value not found in the tree")
+```
+
+This will output "Found value 6 in the tree".
+
+## Problem to Solve
+
+Problem: Given a tree, create a list of all leaves, including their depths and values.
+
+Requisites:
+1. A tree must be represented as a dictionary, with the root node at the top and its children as a list of dictionaries in the "children" key.
+2. The function should take in the tree and return a list of tuples containing the value of the leaf and its depth (the number of edges from the root to the leaf).
+
+
+Here is the solution [Solution](list_leaves.py).
