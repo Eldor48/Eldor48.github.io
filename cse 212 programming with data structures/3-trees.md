@@ -415,4 +415,4 @@ Requisites:
 Here is the solution [Solution](list_leaves.py).
 
 
-Go back to the home page: [Home Page](1-welcome.md)list_leaves
+Go back to the home page: [Home Page](1-welcome.md)

@@ -212,4 +212,4 @@ To solve this problem, you can use a queue to store the names that you have yet 
 You can check your work with the solution here: [Solution](namelist_handler.py)
 
 
-Go back to the home page: [Home Page](1-welcome.md)list_leaves
+Go back to the home page: [Home Page](1-welcome.md)
