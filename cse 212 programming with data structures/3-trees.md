@@ -87,9 +87,6 @@ This creates a binary tree with a root node containing the value 1, a left child
 There are many different operations that can be performed on binary trees, such as traversing the tree (e.g. in-order, pre-order, or post-order), searching for a specific node, inserting new nodes, and deleting nodes.
 
 
-<br>
-
-![Figure 5](Binary_Tree.png)
 
 ### Binary search tree
 
@@ -178,3 +175,15 @@ tree.search(11) # returns False
 
 ```
 This implementation is a simple example and does not include methods for deleting nodes or balancing the tree to maintain good performance. There are many variations and more advanced implementations of binary search trees that address these issues.
+
+
+### Red-black trees 
+![Figure 7](Red-black_tree_example.png)
+
+Red-black trees are a type of self-balancing binary search tree that are commonly used in computer science. They are called "red-black" trees because each node in the tree is either colored red or black. Red-black trees have the following properties:
+
+    1.Every node is either red or black.
+    2.The root is black.
+    1.Every leaf (NULL) is black.
+    1.If a node is red, then both its children are black.
+    1.For each node, all simple paths from the node to descendant leaves contain the same number of black nodes.
