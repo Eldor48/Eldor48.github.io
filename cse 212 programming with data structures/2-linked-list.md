@@ -114,3 +114,5 @@ This program is a photo viewer software that uses a linked list in Python. It ha
 Implement a basic linked list in Python. 
 
 [Solution](linked-list.py)
+
+Go back to the home page: [Home Page](1-welcome.md)list_leaves
