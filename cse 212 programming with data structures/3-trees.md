@@ -56,6 +56,8 @@ These are just a few examples of the types of trees that can be implemented in P
 
 ### Binary tree 
 
+![Figure 5](Binary_Tree.png)
+
 A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. In Python, a binary tree can be implemented using a class with a left and right attribute that point to the left and right child nodes, respectively.
 
 
@@ -88,3 +90,91 @@ There are many different operations that can be performed on binary trees, such 
 <br>
 
 ![Figure 5](Binary_Tree.png)
+
+### Binary search tree
+
+![Figure 6](Binary_Search_Tree.png)
+
+A binary search tree (BST) is a data structure that allows efficient insertion, deletion, and search operations. It is a type of binary tree, a tree data structure in which each node has at most two children. The children are referred to as the left child and the right child.
+
+In a binary search tree, the value of each node in the left subtree is less than the value of the root node, and the value of each node in the right subtree is greater than the value of the root node. This property allows the tree to be searched efficiently, as we can eliminate half of the tree at each step by comparing the value we are searching for with the value of the root node.
+
+For example, to search for a particular value in a binary search tree, we start at the root node and compare the value we are searching for with the value of the root node. If the value we are searching for is less than the value of the root node, we know that the value must be in the left subtree, so we move down to the left child and repeat the process. If the value we are searching for is greater than the value of the root node, we know that the value must be in the right subtree, so we move down to the right child and repeat the process. This process continues until we find the value we are searching for, or until we reach a leaf node (a node with no children) and determine that the value is not in the tree.
+
+Binary search trees are efficient data structures for searching and can be used in a variety of applications, such as storing and searching large datasets or implementing efficient algorithms for sorting and searching. They are also useful for implementing dictionaries and other data structures that need to support fast insertion, deletion, and search operations.
+
+Here is an example of a simple implementation of a binary search tree in Python:
+
+```
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+class BinarySearchTree:
+    def __init__(self):
+        self.root = None
+
+    def insert(self, value):
+        new_node = Node(value)
+        if self.root is None:
+            self.root = new_node
+            return
+        current_node = self.root
+        while True:
+            if value < current_node.value:
+                if current_node.left is None:
+                    current_node.left = new_node
+                    return
+                current_node = current_node.left
+            else:
+                if current_node.right is None:
+                    current_node.right = new_node
+                    return
+                current_node = current_node.right
+
+    def search(self, value):
+        if self.root is None:
+            return False
+        current_node = self.root
+        while current_node is not None:
+            if value == current_node.value:
+                return True
+            elif value < current_node.value:
+                current_node = current_node.left
+            else:
+                current_node = current_node.right
+        return False
+
+
+```
+
+To use this implementation, you can create a new BinarySearchTree object and call the insert method to add nodes to the tree. For example:
+
+```
+tree = BinarySearchTree()
+tree.insert(10)
+tree.insert(5)
+tree.insert(15)
+tree.insert(3)
+tree.insert(7)
+```
+
+This will create a binary search tree with the following structure:
+
+```
+      10
+     /  \
+    5   15
+   / \
+  3   7
+```
+You can then use the search method to search for a particular value in the tree. For example:
+
+```
+tree.search(5)  # returns True
+tree.search(11) # returns False
+
+```
+This implementation is a simple example and does not include methods for deleting nodes or balancing the tree to maintain good performance. There are many variations and more advanced implementations of binary search trees that address these issues.
