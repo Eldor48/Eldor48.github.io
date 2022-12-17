@@ -187,3 +187,102 @@ Red-black trees are a type of self-balancing binary search tree that are commonl
     1.Every leaf (NULL) is black.
     1.If a node is red, then both its children are black.
     1.For each node, all simple paths from the node to descendant leaves contain the same number of black nodes.
+
+
+These properties help to ensure that the tree is balanced, which means that the height of the tree is logarithmic with respect to the number of nodes in the tree. This makes operations such as search, insert, and delete faster than they would be in an unbalanced tree.
+
+In Python, you can use the rb module from the bintrees package to work with red-black trees. Here's an example of how to create a red-black tree and insert some values into it:
+
+```
+from bintrees import rb
+
+tree = rb.RBTree()
+
+tree.insert(5, 'five')
+tree.insert(3, 'three')
+tree.insert(7, 'seven')
+tree.insert(2, 'two')
+
+print(tree.get(3))  # prints 'three'
+
+```
+
+You can also use the rb module to search for values in the tree, delete values from the tree, and perform other operations. For more information, you can refer to the documentation for the rb module: https://bintrees.readthedocs.io/en/latest/reference.html#module-bintrees.rb
+
+### AVL trees
+
+AVL trees are a type of self-balancing binary search tree that are commonly used in computer science. They are named after their inventors, G.M. Adelson-Velsky and E.M. Landis, who introduced them in their 1962 paper "An algorithm for the organization of information." AVL trees have the following properties:
+
+    Every node has a balance factor, which is the height difference between its left and right subtrees.
+    The balance factor of a node can be -1, 0, or 1.
+    The height of an AVL tree is O(log n), where n is the number of nodes in the tree.
+
+AVL trees are useful because they can be searched and modified quickly, thanks to their self-balancing nature. In Python, you can use the AVLTree class from the avltree package to work with AVL trees. Here's an example of how to create an AVL tree and insert some values into it:
+
+```
+from avltree import AVLTree
+
+tree = AVLTree()
+
+tree.insert(5, 'five')
+tree.insert(3, 'three')
+tree.insert(7, 'seven')
+tree.insert(2, 'two')
+
+print(tree.get(3))  # prints 'three'
+
+
+```
+
+You can also use the AVLTree class to search for values in the tree, delete values from the tree, and perform other operations. For more information, you can refer to the documentation for the AVLTree class: https://avltree.readthedocs.io/en/latest/api.html#avltree.AVLTree
+
+### B-trees 
+
+![Figure 8](B-tree-2.png)
+
+B-trees are a type of self-balancing tree data structure that are commonly used in databases and file systems. They are called "B-trees" because the data structure was first described by Bayer and McCreight in 1972. B-trees have the following properties:
+
+    Each node in a B-tree may have a variable number of keys and children.
+    The keys in a node are sorted and divided into groups, with each group having a corresponding child.
+    All leaf nodes are at the same depth.
+    The minimum number of keys in a node is called the minimum degree of the B-tree.
+
+B-trees are useful because they can be searched and modified quickly, thanks to their self-balancing nature and the fact that they store multiple keys in each node. In Python, you can use the BTree class from the BTrees package to work with B-trees. Here's an example of how to create a B-tree and insert some values into it:
+
+```
+from BTrees.OOBTree import BTree
+
+tree = BTree()
+
+tree[5] = 'five'
+tree[3] = 'three'
+tree[7] = 'seven'
+tree[2] = 'two'
+
+print(tree[3])  # prints 'three'
+
+```
+You can also use the BTree class to search for values in the tree, delete values from the tree, and perform other operations. For more information, you can refer to the documentation for the BTree class: https://docs.zope.org/zodb/reference/BTrees.html#BTrees.BTree
+
+
+### Trie tree 
+
+![Figure 9](trie.png)
+
+Trie trees, also known as prefix trees, are a type of tree data structure that are commonly used for storing and searching for strings in a dictionary. Trie trees are efficient because they can search for a string in O(m) time, where m is the length of the string. They do this by storing the strings in a tree structure, with each node representing a single character in the string.
+
+In Python, you can use the Trie class from the pytrie package to work with Trie trees. Here's an example of how to create a Trie tree and insert some strings into it:
+
+```
+from pytrie import StringTrie
+
+tree = StringTrie()
+
+tree["cat"] = 1
+tree["car"] = 2
+tree["cart"] = 3
+
+print(tree["car"])  # prints 2
+
+``` 
+You can also use the Trie class to search for strings in the tree, delete strings from the tree, and perform other operations. For more information, you can refer to the documentation for the Trie class: https://pytrie.readthedocs.io/en/latest/api.html#trie-class
