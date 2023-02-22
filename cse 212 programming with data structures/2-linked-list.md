@@ -115,4 +115,4 @@ Implement a basic linked list in Python.
 
 [Solution](linked-list.py)
 
-Go back to the home page: [Home Page](1-welcome.md)
+Go back to the home page: [Home Page](1-welcome.md)+-
