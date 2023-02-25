@@ -1,87 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Survey Form</title>
-  
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
     
-</head>
-<body>
-    <h1 id="title"></h1>
-    <p id="description"></p>
-    <form action="" id="survey-form">
-        <label id='name-label' for="name">Name</label>
-        <input type="text" id="name" placeholder="e.g John Smith">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="bg-image">
+      <h1 id="title">Thank you for coming to my page!</h1>
+      <p id="description">
+        This survey will work as a way to obtain information on how the
+        community behaves regarding programming habits.
+      </p>
+      <form action="" id="survey-form"> 
+        <label id="name-label" for="name">Name</label>
+        <input type="text" id="name" placeholder="e.g John Smith" required/>
 
+        <label id="email-label" for="email">Email address</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="e.g. ramonjepson23@domainname.com"
+          required
+        />
 
-        <label id='email=label' for="email">Email address</label>
-        <input type="email" name="email" id="email" placeholder="e.g. ramonjepson23@domainname.com">
-       
-        
-        <label id="number-label" for="age">Age </label> 
-        <input type="number" id="age" min="12" max="100" placeholder="Between 12-100">
-         
-        <label for="dropdown">Dropdown</label>
+        <label id="number-label" for="age">Age </label>
+        <input
+          type="number"
+          id="number"
+          min="12"
+          max="100"
+          placeholder="Between 12-100"
+          required
+        />
+        <!-- give me an example for a dropdown menu on a form that asks questions related to programming -->
+        <label for="dropdown">Choose what you like the most about programming</label>
         <select name="dropdown" id="dropdown">
-            <option value="dropdown">Dropdown</option>
-            <option value="dropdown1">Dropdown1</option>
-            <option value="dropdown2">Dropdown2</option>
-            <option value="dropdown3">Dropdown3</option>
+          <option value="frontend">Frontend</option>
+          <option value="backend">Backend</option>
+          <option value="fullstack">Fullstack</option>
+          <option value="none">None</option>
         </select>
 
         <h2>Select your gender</h2>
-         
-        <label for="radio1">Male</label> 
-        <input type="radio" name="gender" id="radio1">
-
-        <label for="radio2">Female</label>
-        <input type="radio" name="gender" id="radio2">
-         
-         
-
-        <h2>Choose your favorites programming languages</h2>
-        <label for="js">Javascript</label>
-        <input type="checkbox" name="Javascript" id="js" value="Javascript">
-        <label for="py">Python</label>
-        <input type="checkbox" name="Python" id="py" value="Python">
-        <label for="c">C++</label>
-        <input type="checkbox" name="C++" id="c" value="C++">
-        <label for="java">Java</label>
-        <input type="checkbox" name="Java" id="java" value="Java">
-        <label for="php">PHP</label>
-        <input type="checkbox" name="PHP" id="php" value="PHP">
-        <label for="ruby">Ruby</label>
-        <input type="checkbox" name="Ruby" id="ruby" value="Ruby">
-        <label for="swift">Swift</label>
-        <input type="checkbox" name="Swift" id="swift" value="Swift">
-        <label for="csharp">C#</label>
-        <input type="checkbox" name="C#" id="csharp" value="C#">
-        <label for="go">Go</label>
-        <input type="checkbox" name="Go" id="go" value="Go">
-        <label for="kotlin">Kotlin</label>
-        <input type="checkbox" name="Kotlin" id="kotlin" value="Kotlin">
-        <label for="dart">Dart</label>
-        <input type="checkbox" name="Dart" id="dart" value="Dart">
-        <label for="scala">Scala</label>
-        <input type="checkbox" name="Scala" id="scala" value="Scala">
-        <label for="rust">Rust</label>
-        <input type="checkbox" name="Rust" id="rust" value="Rust">
-
-      
-
-        <label for="comment">What do you like the most about programming?</label>
-        <textarea name="" id="comment" cols="30" rows="10"></textarea>
+        <div class="male">
+          <input type="radio" name="gender" id="radio1" value="male" required/>
+          <label for="radio1" class="gender">Male</label>
+          
+        </div>
+       <div class="female">
+            <input type="radio" name="gender" id="radio2" value="female" required/>
+            <label for="radio2" class="gender">Female</label>
+       </div>
+       <div class="checkbox">
+        <h2>Choose your favorites programming languages (optional)</h2>
+        <input type="checkbox" name="js" id="js" value="JavaScript"/>
+        <label for="js">JavaScript</label> <br>
+        <input type="checkbox" name="python" id="python" value="Python"/>
+        <label for="python">Python</label> <br>
+        <input type="checkbox" name="java" id="java" value="Java"/>
+        <label for="java">Java</label> <br>
+        <input type="checkbox" name="c" id="c" value="C"/>
+        <label for="c">C</label> <br>
+        <input type="checkbox" name="c++" id="c++" value="C++"/>
+        <label for="c++">C++</label> <br>
+        <input type="checkbox" name="c#" id="c#" value="C#"/>
+        <label for="c#">C#</label> <br>
+        <input type="checkbox" name="php" id="php" value="PHP"/>
+        <label for="php">PHP</label> <br>
         
 
-        <input type="submit" id="submit" value="Submit">
- 
+        
+    </div>
+        <label for="comment"
+          >What do you like the least about programming?</label
+        >
+        <textarea name="" id="comment" cols="30" rows="10"></textarea>
 
-
-    </form>
-
-</body>
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
 </html>
