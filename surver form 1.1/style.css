@@ -35,7 +35,7 @@ button {
   /* margin-top: 1rem; */
 }
 
-input[type="radio"] {
+input[type="radio"] { 
   display: inline;
   transform: scale(1.6);
   text-align: center;
